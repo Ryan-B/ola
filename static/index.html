@@ -3,38 +3,41 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Lena and Ola!</title>
-	<link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Ruthie' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<div id="main_section">
 		<div id="top_banner">
+			<h1 id="ola">Lena & Ola</h1>
+			<h2 id="ola_date">September 4, 2016</h2>
 			<ul>
-				<li class="title"><img id="kiss" src="kiss.jpg"></li>
-				<a href="http://www.amazon.com/Bending-Wind-Cambodian-Couples-America/dp/0786463775/ref=sr_1_1?ie=UTF8&qid=1455064602&sr=8-1&keywords=bending+with+the+wind"><span><li class="title">Registry</li></span></a>
-				<a href="/hotels.html"><span><li class="title">Hotels</li></span></a>
-				<a href="/events.html"><span><li class="title">Events</li></span></a>
-				<!-- <a href="/activities.html"><span><li class="title">Activities</li></span></a> -->
-				<li class="title"><img id="kiss" src="kiss.jpg"></li>
+				<a href="/hotels.html"><span><li class="title">OUR STORY</li></span></a>
+				<a href="/hotels.html"><span><li class="title">WEDDING PARTY</li></span></a>
+				<a href="/hotels.html"><span><li class="title">HOTELS</li></span></a>
+				<a href="http://www.amazon.com/Bending-Wind-Cambodian-Couples-America/dp/0786463775/ref=sr_1_1?ie=UTF8&qid=1455064602&sr=8-1&keywords=bending+with+the+wind"><span><li class="title">REGISTRY</li></span></a>
+				<a href="/events.html"><span><li class="title">SEATTLE</li></span></a>
+				<a href="/activities.html"><span><li class="title">QUESTIONS</li></span></a>
+				<!-- <li class="title"><img id="kiss" src="kiss.jpg"></li> -->
 			</ul>
 			
 		</div>
 		<div id="main_div">
 			
 			<img id="beach" src="beach.jpg" alt="beach">
-			<div class="trips">
+			<!-- <div class="trips">
 				<img class="melt" src="meltdown.jpg" alt="meltdown">
-				<!-- <h1>LOVE</h1> -->
+				<h1>LOVE</h1>
 			</div>
 			<div class="trips">
 				<img class="melt" src="superbowl.jpg" alt="superbowl">
-				<!-- <h1>LIFE</h1> -->
+				<h1>LIFE</h1>
 			</div>
 			<div class="trips">
 				<img class="melt" src="sailing.jpg" alt="sailing">
-				<!-- <h1>LIVE</h1> -->
-			</div>
+				<h1>LIVE</h1>
+			</div> -->
 
-		</div>
+		 </div>
 		<!-- <div id="love">
 			<h1>
 				<li class="mes">LOVE</li>
@@ -42,7 +45,7 @@
 				<li class="mes">LIVE</li>
 			</h1>
 		</div> -->
-		<img src="plaid.jpg" id="plaid">
+		<!-- <img src="plaid.jpg" id="plaid"> -->
 	</div>
 </body>
 </html>
@@ -52,7 +55,7 @@
 	*
 	{
 		/*border: 1px dotted black;*/
-		margin: 0;
+		margin: 1.5% 0 0 0;
 
 	}
 	#main_section
@@ -71,25 +74,28 @@
 	    /*background-position: 50% 0;*/
 	   /* -ms-background-size: cover;*/
 	    background-size: cover;
-	    background-color: #b3f0ff;
+	    /*background-color: #b3f0ff;*/
 	}
 	#main_div
 	{
 		/*border: 1px solid black;*/
 		height: 100%;
-		width: 100%;
+		width: 50%;
+		margin: auto;
+		padding-top: 5%;
 		/*background-image: url('beach.jpg');*/
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-color: #99c2ff;
+		/*background-repeat: no-repeat;
+		background-size: cover;*/
+		/*background-color: #99c2ff;*/
 
 	    
 	}
 	#beach
 	{
-		border-top: .1px solid grey;
+		border: 1px solid grey;
 		height: 100%;
 		width: 100%;
+		margin: auto;
 	}
 	#plaid
 	{
@@ -106,13 +112,24 @@
 	}
 	.title
 	{
-		font-size: 3.5em;
-		font-family: 'Cinzel', serif;
+		font-size: 1.5em;
+		font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   		font-weight: 0;
 		display: inline;
 		vertical-align: top;
 		margin: 1.5%;
+		text-decoration: none;
+		color: grey;
 
 
+	}
+	.title:hover
+	{
+		color: #c2d6d6;
+	}
+	a
+	{
+		text-decoration: none;
 	}
 	.trips
 	{
@@ -154,6 +171,19 @@
 		
 		border: .1px solid grey;
 		border-radius: 100px;
+	}
+	#ola
+	{
+		font-family: 'Ruthie', cursive;
+		text-align: center;
+		font-size: 8em;
+	}
+	#ola_date
+	{
+		font-family: 'Ruthie', cursive;
+		text-align: center;
+		font-size: 2em;
+		color: gold;
 	}
 
 
