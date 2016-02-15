@@ -19,17 +19,63 @@
 			<h2 id="ola_date"><i>September 4, 2016</i></h2>
 			<ul>
 				<a href="/views/ourstory.html"><span><li class="title">OUR STORY</li></span></a>
-				<a href="/views/wedding_events.html"><span><li class="title">WEDDING & EVENTS</li></span></a>
-				<a href="/views/hotels.html"><span><li class="title">HOTEL & SITES</li></span></a>
-				<a href="http://www.amazon.com/Bending-Wind-Cambodian-Couples-America/dp/0786463775/ref=sr_1_1?ie=UTF8&qid=1455064602&sr=8-1&keywords=bending+with+the+wind"><span><li class="title">REGISTRY</li></span></a>
-				<a href="/views/events.html"><span><li class="title">RSVP</li></span></a>
+				<a href="/views/wedding_events.html"><span><li class="title" id="bord">WEDDING & EVENTS</li></span></a>
+				<a href="/views/hotels2.html"><span><li class="title">HOTEL & SITES</li></span></a>
+				<a href="/views/registry.html"><span><li class="title">REGISTRY</li></span></a>
+				<a href="/views/rsvp.html"><span><li class="title">RSVP</li></span></a>
 				
 			</ul>
 		</div>	
 	
 	
 		<div id="inner_div">
-			<img src="/img/park.jpg">
+			<ul>
+				<a href=""><li class="dates">Monday 29th</li></a>
+				<a href=""><li class="dates">Tuesday 30th</li></a>
+				<a href=""><li class="dates">Wednesday 31st</li></a>
+				<a href=""><li class="dates">Thursday 1st</li></a>
+				<a href=""><li class="dates">Friday 2nd</li></a>
+				<a href=""><li class="dates">Saturday 3rd</li></a>
+				<a href=""><li class="dates"><span id="sunday">Sunday 4th</li></span></a>
+				<a href=""><li class="dates">Monday 5th</li></a>
+			</ul>
+		</div>
+		<div class="day_plan">
+			<p class="day_p">Monday, August 29th</p>
+				<h3>TBD</h3>
+		</div>
+		<div class="day_plan">
+			<p class="day_p">Tuesday, August 30th</p>
+				<h3>TBD</h3>
+		</div>
+		<div class="day_plan">
+			<p class="day_p">Wednesday, August 31st</p>
+				<h3>TBD</h3>
+		</div>
+		<div class="day_plan">
+			<p class="day_p">Thursday, September 1st</p>
+				<h3>TBD</h3>
+		</div>
+		<div class="day_plan">
+			<p class="day_p">Friday, September 2nd</p>
+				<h3>Ola and Lena hosted Dance Party Spectacular</h3>
+		</div>
+		<div class="day_plan">
+			<p class="day_p">Saturday, September 3rd</p>
+				<h3>Rehearsal Dinner</h3>
+		</div>
+		<div class="day_plan">
+			<p class="day_p" id="sunday2">Sunday, September 4th</p><br>
+			<h2 class="event">CEREMONY</h2>
+			<h3 class="locale">Fairview Park<br><span id="address">2900 Fairview Ave E, Seattle, WA 98102</span></h3>
+
+			<h2 class="event">RECEPTION</h2>
+			<h3 class="locale">Queen City Yacht Club<br><span id="address">2608 Boyer Ave E, Seattle, WA 98102</span></h3>
+		</div>
+		<div class="day_plan">
+			<p class="day_p">Monday, September 5th</p>
+			<h3>The Breakfast of Thanks</h3>
+			<h3>Andy Coe Band -- Blue Moon Tavern -- 10:30pm
 		</div>
 	</div>
 </body>
@@ -71,13 +117,23 @@
 		height: 100%;
 		border: 1px solid black;
 		margin: auto;
-
-		
-
 	}
 	h3
+	{	
+		/*margin-top: 5%;*/
+		margin-bottom: 5%;
+		text-align: center;
+		font-family: "Radley", serif;
+	}
+	h2
 	{
-		margin-bottom: 15%;
+		margin-bottom: 1%;
+		text-align: center;
+		font-family: "Radley", serif;
+	}
+	p
+	{
+		margin-bottom: 1%;
 		text-align: center;
 		font-family: "Radley", serif;
 	}
@@ -129,7 +185,7 @@
 	}
 	#ola_font
 	{
-		font-family: 'Radley', cursive;
+		font-family: 'Radley', serif;
 		text-align: center;
 		font-size: 5em;
 		margin-bottom: 1.5%;
@@ -162,6 +218,67 @@
 	   /* -ms-background-size: cover;*/
 	    background-size: cover;
 	    /*background-color: #b3f0ff;*/
+	}
+	#bord
+	{
+		border-bottom: 2px solid grey;
+	}
+	.dates
+	{
+		display: inline;
+		font-family: "Radley", serif;
+		font-size: .625em;
+		margin: 2%;
+		color: lightgrey;
+	}
+	.dates:hover
+	{
+		color: grey;
+	}
+	#sunday
+	{
+		color: red;
+	}
+	#sunday:hover
+	{
+		color: black;
+	}
+	.day_plan
+	{
+		border: 2px solid black;
+		width: 60%;
+		margin: auto;
+		text-align: center;
+		margin-top: 5%;
+		margin-bottom: 5%;
+		border-radius: 20px;
+
+	}
+	.day_p
+	{
+		margin: 3%;
+		border-bottom: 1px solid grey;
+		display: inline-block;
+	}
+	#sunday2
+	{
+		color: red;
+		display: inline-block;
+	}
+	#address
+	{
+		font-size: .7em;
+		color: lightgrey;
+	}
+	.event
+	{
+		/*border-bottom: 1px solid grey;*/
+		display: inline-block;
+	}
+	.locale
+	{
+		color: grey;
+
 	}
 
 </style>

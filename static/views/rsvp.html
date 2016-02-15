@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Our Story</title>
+	<title>Hotels</title>
 	<link href='https://fonts.googleapis.com/css?family=Radley:400,400italic' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -18,26 +18,23 @@
 			<!-- <h1 id="ola_font5">Lena & Ola</h1> -->
 			<h2 id="ola_date"><i>September 4, 2016</i></h2>
 			<ul>
-				<a href="/views/ourstory.html"><span><li class="title" id="bord">OUR STORY</li></span></a>
+				<a href="/views/ourstory.html"><span><li class="title">OUR STORY</li></span></a>
 				<a href="/views/wedding_events.html"><span><li class="title">WEDDING & EVENTS</li></span></a>
 				<a href="/views/hotels2.html"><span><li class="title">HOTEL & SITES</li></span></a>
 				<a href="/views/registry.html"><span><li class="title">REGISTRY</li></span></a>
-				<a href="/views/rsvp.html"><span><li class="title">RSVP</li></span></a>
+				<a href="/views/rsvp.html"><span><li class="title" id="bord">RSVP</li></span></a>
 				
 			</ul>
-		</div>	
-	
-	
-		<div id="inner_div">
-			<!-- <h1>Ola and Lena</h1> -->
-			<img src="/img/plaid.jpg">
-			<h3>Mischievous Plaids</h3>
-			<img src="/img/superbowl.jpg">
-			<h3>Hawk-Dawg, Hawk-Dawg!</h3>
-			<img src="/img/family.jpg">
-			<h3>Familj</h3>
 		</div>
-	</div>
+		<div id="register">
+			<h1>Please Register to RSVP</h1>
+			<form>
+				<input type="text" name="name" placeholder="name"><br>
+				<input type="email" name="email" placeholder="email"><br>
+				<input type="text" name="phone" placeholder="phone number"><br>
+				<input type="submit" name="submit">
+			</form>
+		</div>
 </body>
 </html>
 
@@ -76,7 +73,6 @@
 		height: 100%;
 		border: 1px solid black;
 		margin: auto;
-		border-radius: 40px;
 		
 
 	}
@@ -88,9 +84,11 @@
 	}
 	h1
 	{
-		margin-bottom: 15%;
+		margin-bottom: 3%;
+		margin-top: 10%;
 		text-align: center;
 		font-family: "Radley", serif;
+		color: lightgrey;
 	}
 	.title
 	{
@@ -171,6 +169,12 @@
 	#bord
 	{
 		border-bottom: 2px solid grey;
+	}
+	form
+	{
+		 
+		text-align: center;
+		margin-bottom: 5%;
 	}
 
 </style>
