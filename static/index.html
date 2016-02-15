@@ -10,6 +10,49 @@
 	<!-- <link href='https://fonts.googleapis.com/css?family=Lovers+Quarrel' rel='stylesheet' type='text/css'> -->
 	<!-- <link href='https://fonts.googleapis.com/css?family=Codystar:300' rel='stylesheet' type='text/css'> -->
 	<!-- <link href='https://fonts.googleapis.com/css?family=Faster+One' rel='stylesheet' type='text/css'> -->
+	<script type="text/javascript">
+		var dimages=new Array();
+		var numImages=5;
+
+		for (i=0; i<numImages; i++)
+		{
+		  dimages[i]=new Image();
+		  dimages[i].src="img/slideshow/"+(i+1)+".jpg";
+		}
+		var curImage=-1;
+		function swapPicture()
+		{
+		  if (document.images)
+		  {
+		    var nextImage=curImage+1;
+		    if (nextImage>=numImages)
+		      nextImage=0;
+		    if (dimages[nextImage] && dimages[nextImage].complete)
+		    {
+		      var target=0;
+		      if (document.images.myImage)
+		        target=document.images.myImage;
+		      if (document.all && document.getElementById("myImage"))
+		        target=document.getElementById("myImage");
+		  
+		      // make sure target is valid.  It might not be valid
+		      //   if the page has not finished loading
+		      if (target)
+		      {
+		        target.src=dimages[nextImage].src;
+		        curImage=nextImage;
+		      }
+		      setTimeout("swapPicture()", 5000);
+		    }
+		    else
+		    {
+		      setTimeout("swapPicture()", 500);
+		    }
+		  }
+		}
+		setTimeout("swapPicture()", 5000);
+
+	</script>
 </head>
 <body>
 	<div id="main_section">
@@ -35,7 +78,7 @@
 		<!-- </div> -->
 		<div id="main_div">
 			
-			<a href="/beach.html"><img id="beach" src="img/beach.jpg" alt="beach"></a>
+			<img id="beach" src="img/slideshow/1.jpg" alt="beach" id="myImage" name="myImage"></a>
 			<h3 id="come">COME CELEBRATE OUR WEDDING</h3>
 			<div id="inner_div">
 				<h2 class="names">Lena Barouh</h2>
