@@ -1,47 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="app">
 <head>
 	<meta charset="UTF-8">
 	<title>RSVP</title>
+	<script type="text/javascript" src="/js/lib/angular.js"></script>
+	<script type="text/javascript" src="/js/lib/angular-routes.js"></script>
+	<script type="text/javascript" src="/js/modules.js"></script>
+  	<script type="text/javascript" src="/js/factories.factory.js"></script>
+  	<script type="text/javascript" src="/js/controllers.ctrl.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="/js/lib/jquery.timer.js"></script>
 	<link href='https://fonts.googleapis.com/css?family=Radley:400,400italic' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<div id="main_div">
-		<div id="top_banner">
-			<!-- <h1 id="ola"><i>Lena & Ola</i></h1> -->
-			<div id="title_div">
-				<a href="/"><h1 id="ola_font">Lena <i>&</i> Ola</h1></a>
-			</div>
-			<!-- <h1 id="ola_font2">Lena & Ola</h1> -->
-			<!-- <h1 id="ola_font3">Lena & Ola</h1> -->
-			<!-- <h1 id="ola_font4">Lena & Ola</h1> -->
-			<!-- <h1 id="ola_font5">Lena & Ola</h1> -->
-			<h2 id="ola_date"><i>September 4, 2016</i></h2>
-			<ul>
-				<a href="/views/ourstory.html"><span><li class="title">OUR STORY</li></span></a>
-				<a href="/views/wedding_events.html"><span><li class="title">WEDDING <i>&</i> EVENTS</li></span></a>
-				<a href="/views/hotels2.html"><span><li class="title">HOTEL <i>&</i> SITES</li></span></a>
-				<a href="/views/registry.html"><span><li class="title">REGISTRY</li></span></a>
-				<a href="/views/rsvp.html"><span><li class="title" id="bord">RSVP</li></span></a>
-				
-			</ul>
-		</div>
+		
 		<div id="register">
 			<h1>Please Register to RSVP</h1>
 			<form>
 				<label>Email Address *</label>
-				<input id="input_email" type="email" name="email" placeholder="Email Address">
+				<input id="input_email" ng-model="usersCtrl.newUser.email" type="email" name="email" placeholder="  Email Address">
 				<label>Name *</label><br>
-				<input id="input_name" type="text" name="name" placeholder="First Name">
-				<input id="input_name" type="text" name="name" placeholder="Last Name"><br>
+				<input id="input_name" ng-model="usersCtrl.newUser.first_name" type="text" name="name" placeholder="  First Name">
+				<input id="input_name" ng-model="usersCtrl.newUser.last_name" type="text" name="name" placeholder="  Last Name"><br>
 				<label>Are you attending? *</label>
-				<input id="input_email" type="text" name="attending" placeholder="type here..."><br>
+				<input id="input_email" ng-model="usersCtrl.newUser.attending" type="text" name="attending" placeholder="  type here..."><br>
 				<label>Who else is comming with you? *</label>
-				<input id="input_email" type="text" name="who_else" placeholder="type here..."><br>
+				<input id="input_email" ng-model="usersCtrl.newUser.who_else" type="text" name="who_else" placeholder="  type here..."><br>
 				<label>Message</label><br>
-				<textarea placeholder="type here..." name="comment"></textarea>
+				<textarea ng-model="usersCtrl.newUser.comment" placeholder="  type here..." name="comment"></textarea>
 				<div id="rsvp_div">
-					<input id="rsvp" type="submit" value="RSVP">
+					<input id="rsvp" type="submit" value="RSVP" ng-click="usersCtrl.create(usersCtrl.newUser)">
 				</div>
 			</form>
 		</div>
@@ -52,12 +41,12 @@
 <style type="text/css">
 	*
 	{
-		margin: .5% 0 0 0;
+		margin: 0 0 0 0;
 		/*border: 1px dotted red;*/
 	}
 	body
 	{
-		margin: 7.75%;
+		margin: 7.5%;
 		background-color: #f5f5ef;
 		
 	}
@@ -68,7 +57,7 @@
 		/*border: 1px dotted black;*/
 		margin: auto;
 		background-color: white;
-		border: .5px solid lightgrey;
+		/*border: .5px solid lightgrey;*/
 
 	}
 	#inner_div
@@ -188,7 +177,7 @@
 	}
 	#register
 	{
-		width: 50%;
+		width: 75%;
 		margin: auto;
 	}
 	#input_email
@@ -205,12 +194,12 @@
 	#input_email::-webkit-input-placeholder 
 	{ 
   		color: white;
-  		
+  		margin-left: 3%;
   		vertical-align: top;
   	}
   	#input_email:hover
   	{
-		background-color: red;
+		background-color: grey;
   	}
   	#input_name
 	{
@@ -226,12 +215,12 @@
 	#input_name::-webkit-input-placeholder 
 	{ 
   		color: white;
-  		
+  		margin-left: 3%;
   		vertical-align: top;
   	}
   	#input_name:hover
   	{
-  		background-color: red;
+  		background-color: grey;
   	}
   	textarea
   	{
@@ -244,12 +233,13 @@
   	textarea::-webkit-input-placeholder 
 	{ 
   		color: white;
+
   		
   		/*vertical-align: top;*/
   	}
   	textarea:hover
   	{
-  		background-color: red;
+  		background-color: grey;
   	}
   	#rsvp
   	{

@@ -1,8 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="app">
 <head>
 	<meta charset="UTF-8">
 	<title>Lena and Ola!</title>
+	<script type="text/javascript" src="/js/lib/angular.js"></script>
+	<script type="text/javascript" src="/js/lib/angular-routes.js"></script>
+	<script type="text/javascript" src="/js/modules.js"></script>
+  	<script type="text/javascript" src="/js/factories.factory.js"></script>
+  	<script type="text/javascript" src="/js/controllers.ctrl.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="/js/lib/jquery.timer.js"></script>
 	<!-- <link href='https://fonts.googleapis.com/css?family=Ruthie' rel='stylesheet' type='text/css'> -->
 	<link href='https://fonts.googleapis.com/css?family=Radley:400,400italic' rel='stylesheet' type='text/css'>
 	<!-- <link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'> -->
@@ -10,56 +17,15 @@
 	<!-- <link href='https://fonts.googleapis.com/css?family=Lovers+Quarrel' rel='stylesheet' type='text/css'> -->
 	<!-- <link href='https://fonts.googleapis.com/css?family=Codystar:300' rel='stylesheet' type='text/css'> -->
 	<!-- <link href='https://fonts.googleapis.com/css?family=Faster+One' rel='stylesheet' type='text/css'> -->
-	<script type="text/javascript">
-		var dimages=new Array();
-		var numImages=6;
-
-		for (i=0; i<numImages; i++)
-		{
-		  dimages[i]=new Image();
-		  dimages[i].src="img/slideshow/"+(i+1)+".jpg";
-		}
-		var curImage=-1;
-		function swapPicture()
-		{
-		  if (document.images)
-		  {
-		    var nextImage=curImage+1;
-		    if (nextImage>=numImages)
-		      nextImage=0;
-		    if (dimages[nextImage] && dimages[nextImage].complete)
-		    {
-		      var target=0;
-		      if (document.images.myImage)
-		        target=document.images.myImage;
-		      if (document.all && document.getElementById("myImage"))
-		        target=document.getElementById("myImage");
-		  
-		      // make sure target is valid.  It might not be valid
-		      //   if the page has not finished loading
-		      if (target)
-		      {
-		        target.src=dimages[nextImage].src;
-		        curImage=nextImage;
-		      }
-		      setTimeout("swapPicture()", 3000);
-		    }
-		    else
-		    {
-		      setTimeout("swapPicture()", 300);
-		    }
-		  }
-		}
-		setTimeout("swapPicture()", 3000);
-
-	</script>
+	
+	
 </head>
 <body>
 	<div id="main_section">
 		<div id="top_banner">
 			<!-- <h1 id="ola"><i>Lena & Ola</i></h1> -->
-			<div id="tite_div">
-				<h1 id="ola_font">Lena <i>&</i> Ola</h1>
+			<div id="title_div">
+				<a href="#/"><h1 id="ola_font">Lena <i>&</i> Ola</h1></a>
 			</div>
 			<!-- <h1 id="ola_font2">Lena & Ola</h1> -->
 			<!-- <h1 id="ola_font3">Lena & Ola</h1> -->
@@ -67,18 +33,19 @@
 			<!-- <h1 id="ola_font5">Lena & Ola</h1> -->
 				<h2 id="ola_date"><i>September 4, 2016</i></h2>
 			<ul>
-				<a href="/views/ourstory.html"><span><li class="title">OUR STORY</li></span></a>
-				<a href="/views/wedding_events.html"><span><li class="title">WEDDING <i>&</i> EVENTS</li></span></a>
-				<a href="/views/hotels2.html"><span><li class="title">HOTEL <i>&</i> SITES</li></span></a>
-				<a href="/views/registry.html"><span><li class="title">REGISTRY</li></span></a>
-				<a href="/views/rsvp.html"><span><li class="title">RSVP</li></span></a>
-				
+				<a href="#/ourstory"><span><li class="title">OUR STORY</li></span></a>
+				<a href="#/wedding_events"><span><li class="title">WEDDING <i>&</i> EVENTS</li></span></a>
+				<a href="#/hotels2"><span><li class="title">HOTEL <i>&</i> SITES</li></span></a>
+				<a href="#/registry"><span><li class="title">REGISTRY</li></span></a>
+				<a href="#/rsvp"><span><li class="title">RSVP</li></span></a>
 			</ul>
+				
 			
-		<!-- </div> -->
+		</div>
 		<div id="main_div">
 			
-			<img id="beach" src="img/slideshow/1.jpg" alt="beach" id="myImage" name="myImage"></a>
+			<div ng-view id="stats"></div>
+			<!-- <img id="beach" src="img/slideshow/1.jpg" alt="beach" id="myImage" name="myImage"></a>
 			<h3 id="come">COME CELEBRATE OUR WEDDING</h3>
 			<div id="inner_div">
 				<h2 class="names">Lena Barouh</h2>
@@ -89,7 +56,7 @@
 			<div id="bottom_div">
 				
 				<p id="bottom_message">Lena and Ola joyfully request the pleasure of your company as we speak our vows and join in marriage in the presence of family and friends.</p>
-			</div>
+			</div> -->
 
 
 		 </div>
@@ -103,12 +70,12 @@
 	*
 	{
 		/*border: 1px dotted black;*/
-		margin: .5% 0 0 0;
+		margin: 0 0 0 0;
 
 	}
 	body
 	{
-		margin: 7.75%;
+		margin: 7.5%;
 		
 		/*background-color: #f0f0f5;*/
 		background-color: #f5f5ef;
@@ -121,7 +88,7 @@
 		/*border: 1px dotted black;*/
 		/*background-color: #f5f5ef;*/
 		background-color: white;
-		border: .5px solid lightgrey;
+		/*border: .5px solid lightgrey;*/
 
 	}
 	#top_banner
@@ -138,213 +105,14 @@
 	}
 	#main_div
 	{
-		/*border: 1px solid black;*/
-		height: 50%;
-		width: 50%;
+		height: 82.5%;
+		width: 82.5%;
 		margin: auto;
 		padding-top: 5%;
-		/*background-image: url('beach.jpg');*/
-		/*background-repeat: no-repeat;
-		background-size: cover;*/
-		/*background-color: #99c2ff;*/
-
-	    
 	}
-	#beach
-	{
-		border: 2px solid grey;
-		height: 100%;
-		width: 100%;
-		margin: auto;
-	}
-	#come
-	{
-		text-align: center;
-		margin-top: 17.5%;
-		font-family: 'Radley', serif;
-		font-size: 1em;
-		color: grey;
-		margin-bottom: 5%;
-	}
-	#inner_div
-	{
-
-		width: 90%;
-		height: 100%;
-		margin: auto;
-		border-top: 1px solid black;
-		border-bottom: 1px solid black;
-		margin-bottom: 5%;
-	}
-	.names
-	{
-		text-align: center;
-		margin: 5% 0 5% 0;
-		font-family: 'Radley', serif;
-		font-size: 2em; 
-		color: #595959;
-	}
-	#and
-	{
-		text-align: center;
-		margin: 5% 0 5% 0;
-	}
-	#date_2
-	{
-		text-align: center;
-		color: grey;
-		margin-bottom: 5%;
-	}
-	#plaid
-	{
-		height: 100%;
-		width: 100%;
-	}
-	.melt
-	{
-		height: 25%;
-		width: 25%;
-		display: inline;
-		margin: .75% 0 .75% 5.5%;
-		border: 4px solid black;
-	}
-	.title
-	{
-		font-size: 1em;
-		/*font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; */
-		font-family: 'Radley', serif;
-   		font-weight: 100;
-		display: inline;
-		vertical-align: top;
-		margin: 1.9%;
-		text-decoration: none;
-		color: grey;
-
-
-	}
-	.title:hover
-	{
-		color: #c2d6d6;
-		/*color: lime;*/
-	}
-	a
-	{
-		text-decoration: none;
-	}
-	.trips
-	{
-		/*border: 1px dotted black;*/
-		/*height: 20%;*/
-		width: 30%;
-		display: inline;
-	}
-	span
-	{
-		color: dodgerblue;
-	}
-	#gold
-	{
-		color: grey;
-	}
-	ul
-	{
-		text-align: center;
-		padding: 0;
-
-
-	}
-	.mes
-	{
-		display: inline;
-		margin: 11%;
-		background-color: #99c2ff;
-	}
-	#love
-	{
-		background-color: #99c2ff;
-	}
-	#kiss
-	{
-		height: 5%;
-		width: 5%;
-		margin-top: 5px;
-		
-		border: .1px solid grey;
-		border-radius: 100px;
-	}
-	#ola
-	{
-		font-family:'Lovers Quarrel',  cursive;
-		text-align: center;
-		font-size: 7em;
-	}
-	#ola_date
-	{
-		font-family: 'Radley', cursive;
-		text-align: center;
-		font-size: 1.25em;
-		color: grey;
-		margin-bottom: 5%;
-
-	}
-	#ola_font
-	{
-		font-family: 'Radley', serif;
-		text-align: center;
-		font-size: 5em;
-		margin-bottom: 1.5%;
-		margin-top: 3.5%;
-
-		color: #808080;
-	}
-	#ola_font2
-	{
-		font-family: 'Great Vibes', cursive;
-		text-align: center;
-		font-size: 7em;
-	}
-	#ola_font3
-	{
-		font-family: 'Monsieur La Doulaise', cursive;
-		text-align: center;
-		font-size: 7em;
-	}
-	#ola_font4
-	{
-		font-family: 'Codystar', cursive;
-		text-align: center;
-		font-size: 7em;
-		color: lightgrey;
-	}
-	#ola_font5
-	{
-		font-family: 'Faster One', cursive;
-		text-align: center;
-		font-size: 7em;
-		color: purple;
-	}
-	#bottom_message
-	{
-		text-align: center;
-		margin: 30% 0 10% 0;
-		font-family: "Radley", serif;
-		font-weight: 100;
-		font-size: .8em;
-		color: grey;
-	}
-	#bottom_div
-	{
-		width: 50%;
-		margin: auto;
-	}
-	#title_div
-	{
-		width: 100%;
-		margin: auto;
-		/*border: 1px solid black;*/
-		text-align: center;
-	}
-
+	
+	
+	
 
 
 </style>

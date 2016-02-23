@@ -13,6 +13,6 @@ app.use(bodyParser.json());
 app.use(express.static(__dirname+'/static'));
 
 //Mongoose
-// require('./server/config/mongoose.js');
+require('./server/config/mongoose.js');
 //HTTP Routes
-// require('./server/config/routes.js')(app);
+require('./server/config/routes.js')(app);

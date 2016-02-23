@@ -1,56 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Our Story</title>
-	<link href='https://fonts.googleapis.com/css?family=Radley:400,400italic' rel='stylesheet' type='text/css'>
-</head>
-<body>
-	<div id="main_div">
-		<div id="top_banner">
-			<!-- <h1 id="ola"><i>Lena & Ola</i></h1> -->
-			<div id="title_div">
-				<a href="/"><h1 id="ola_font">Lena <i>&</i> Ola</h1></a>
-			</div>
-			<!-- <h1 id="ola_font2">Lena & Ola</h1> -->
-			<!-- <h1 id="ola_font3">Lena & Ola</h1> -->
-			<!-- <h1 id="ola_font4">Lena & Ola</h1> -->
-			<!-- <h1 id="ola_font5">Lena & Ola</h1> -->
-			<h2 id="ola_date"><i>September 4, 2016</i></h2>
-			<ul>
-				<a href="/views/ourstory.html"><span><li class="title" id="bord">OUR STORY</li></span></a>
-				<a href="/views/wedding_events.html"><span><li class="title">WEDDING <i>&</i> EVENTS</li></span></a>
-				<a href="/views/hotels2.html"><span><li class="title">HOTEL <i>&</i> SITES</li></span></a>
-				<a href="/views/registry.html"><span><li class="title">REGISTRY</li></span></a>
-				<a href="/views/rsvp.html"><span><li class="title">RSVP</li></span></a>
-				
-			</ul>
-		</div>	
-	
-	
-		<div id="inner_div">
-			<!-- <h1>Ola and Lena</h1> -->
-			<!-- <img src="/img/plaid.jpg">
-			<h3>Mischievous Plaids</h3>
-			<img src="/img/superbowl.jpg">
-			<h3>Hawk-Dawg, Hawk-Dawg!</h3> -->
-			<img src="/img/family.jpg">
-			<h3>Familj</h3>
-		</div>
-	</div>
-</body>
-</html>
 
+
+	<!-- </div> -->
+
+		<div id="main_div">
+			<div id="img_div" >
+				<img id="beach" ng-src="{{homeCtrl.image}}" alt="beach" id="myImage" name="myImage"></a>
+			</div>
+				
+	
+			<h3 id="come">COME CELEBRATE OUR WEDDING</h3>
+			<div id="inner_div">
+				<h2 class="names">Lena Barouh</h2>
+				<h6 id="and"><i>-and-</i></h6>
+				<h2 class="names1">Ola Järvegren</h2>
+			</div>
+				<!-- <h5 id="date_2">Sunday, September 4th, 2016</h5> -->
+			<div id="bottom_div">
+				
+				<p id="bottom_message"><i>Standing on the moon with nothing left to do. Lovely view of heaven, but I'd rather be with you.</i><br><br> - Grateful Dead - "Standing On The Moon"</p>
+			</div>
+
+
+		 </div>
 
 <style type="text/css">
 	*
 	{
-		margin: .5% 0 0 0;
+		margin: 0 0 0 0;
 		/*border: 1px dotted red;*/
 	}
 	body
 	{
-		margin: 7.75%;
+		margin: 7.5%;
 		background-color: #f5f5ef;
 		
 	}
@@ -61,14 +42,20 @@
 		/*border: 1px dotted black;*/
 		margin: auto;
 		background-color: white;
-		border: .5px solid lightgrey;
+		/*border: .5px solid lightgrey;*/
 
+	}
+	#img_div
+	{
+		width: 75%;
+		margin: auto;
 	}
 	#inner_div
 	{
 		width: 70%;
 		margin: auto;
 		padding-top: 5%;
+		padding-bottom: 5%;
 	}
 	img
 	{
@@ -76,13 +63,23 @@
 		height: 100%;
 		border: 1px solid black;
 		margin: auto;
-		border-radius: 40px;
-		
-
 	}
 	h3
+	{	
+		/*margin-top: 5%;*/
+		margin-bottom: 5%;
+		text-align: center;
+		font-family: "Radley", serif;
+	}
+	h2
 	{
-		margin-bottom: 15%;
+		margin-bottom: 1%;
+		text-align: center;
+		font-family: "Radley", serif;
+	}
+	p
+	{
+		margin-bottom: 1%;
 		text-align: center;
 		font-family: "Radley", serif;
 	}
@@ -172,5 +169,38 @@
 	{
 		border-bottom: 2px solid grey;
 	}
+	#come
+	{
+		text-align: center;
+		margin-top: 17.5%;
+		/*border-top: 1px solid black;*/
+		font-family: 'Radley', serif;
+		font-size: 1em;
+		color: grey;
+		margin-bottom: 5%;
+	}
+	#and
+	{
+		text-align: center;
+		margin: 5% 0 5% 0;
+	}
+	.names
+	{
+		border-top: 1px solid black;
+		font-family: 'Radley', serif;
+	}
+	.names1
+	{
+		border-bottom: 1px solid black;
+		font-family: 'Radley', serif;
+	}
+	#bottom_message
+	{
+		margin-bottom: 10%;
+		margin-top: 5%;
+		color: lightgrey;
+	}
+	
+	
 
 </style>
