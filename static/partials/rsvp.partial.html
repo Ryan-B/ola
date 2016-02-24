@@ -1,21 +1,7 @@
-<!DOCTYPE html>
-<html lang="en" ng-app="app">
-<head>
-	<meta charset="UTF-8">
-	<title>RSVP</title>
-	<script type="text/javascript" src="/js/lib/angular.js"></script>
-	<script type="text/javascript" src="/js/lib/angular-routes.js"></script>
-	<script type="text/javascript" src="/js/modules.js"></script>
-  	<script type="text/javascript" src="/js/factories.factory.js"></script>
-  	<script type="text/javascript" src="/js/controllers.ctrl.js"></script>
-	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-	<script type="text/javascript" src="/js/lib/jquery.timer.js"></script>
-	<link href='https://fonts.googleapis.com/css?family=Radley:400,400italic' rel='stylesheet' type='text/css'>
-</head>
-<body>
+
 	<div id="main_div">
 		
-		<div id="register" ng-controller="ProductsController as productsCtrl">
+		<div class="register" ng-controller="ProductsController as productsCtrl">
 			<h1>Please Register to RSVP</h1>
 			<form>
 				<label>Email Address *</label>
@@ -30,13 +16,22 @@
 				<label>Message</label><br>
 				<textarea ng-model="productsCtrl.newProduct.comment" placeholder="  type here..." name="comment"></textarea>
 				<div id="rsvp_div">
-					<button id="rsvp" type="submit" value="RSVP" ng-click="productsCtrl.addProduct(productsCtrl.newProduct)">
+					<button id="rsvp" type="submit" value="RSVP" ng-click="productsCtrl.addProduct(productsCtrl.newProduct)">RSVP</button>
 				</div>
+
+			<a href="#/hidden"><div id="hidden"></div></a>
 			</form>
 		</div>
-</body>
-</html>
-
+		<!-- <div id="rsvp_info" ng-repeat="product in productsCtrl.products">
+			<h5>Name:</h5><p class="rsvp_name" ng-bind="product.first_name"></p>
+					 </h5><p class="rsvp_name" ng-bind="product.last_name"></p>
+			<h5>Attending?</h5><p ng-bind="product.attending"></p>
+			<h5>Who are you Bringing?</h5><p ng-bind="product.who_else"></p>
+			<h5>Email:</h5><p ng-bind="product.email"></p>
+			<h5>Message:</h5><p ng-bind="product.comment"></p>
+			<button id="delete" ng-click="productsCtrl.removeProduct(product)">Remove</button>
+		</div> -->
+	</div>
 
 <style type="text/css">
 	*
@@ -175,7 +170,7 @@
 		/*text-align: center;*/
 		margin-bottom: 5%;
 	}
-	#register
+	.register
 	{
 		width: 75%;
 		margin: auto;
@@ -266,6 +261,32 @@
   		text-align: center;
   		margin: auto;
   		margin-bottom: 33%;
+  	}
+  	.rsvp_name
+  	{
+  		display: inline;
+  	}
+  	#rsvp_info
+  	{
+  		display: inline-block;
+  		border: 1px solid darkgrey;
+  		margin: 2.5%;
+  		padding: 5%;
+  	}
+  	#delete
+  	{
+  		border-radius: 100px;
+  		background-color: purple;
+  		color: white;
+  	}
+  	#hidden
+  	{
+  		width: 100%;
+  		height: 50px;
+  		/*border: 1px dotted black;*/
+  		/*float: right;*/
+  		/*vertical-align: bottom;*/
+  		/*display: block;*/
   	}
 
 </style>

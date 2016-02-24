@@ -35,5 +35,15 @@ app.config(function($routeProvider){
 		controllerAs: 'productsCtrl',
 		templateUrl: '/partials/rsvp.partial.html'
 	})
+	.when('/hidden', {
+		controller: 'ProductsController',
+		controllerAs: 'productsCtrl',
+		templateUrl: '/partials/hidden.partial.html'
+	})
+	.when('/thursday', {
+		controller: 'ProductsController',
+		controllerAs: 'productsCtrl',
+		templateUrl: '/partials/thursday.partial.html'
+	})
 
 });
