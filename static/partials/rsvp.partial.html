@@ -15,22 +15,22 @@
 <body>
 	<div id="main_div">
 		
-		<div id="register">
+		<div id="register" ng-controller="ProductsController as productsCtrl">
 			<h1>Please Register to RSVP</h1>
 			<form>
 				<label>Email Address *</label>
-				<input id="input_email" ng-model="usersCtrl.newUser.email" type="email" name="email" placeholder="  Email Address">
+				<input id="input_email" ng-model="productsCtrl.newProduct.email" type="email" name="email" placeholder="  Email Address">
 				<label>Name *</label><br>
-				<input id="input_name" ng-model="usersCtrl.newUser.first_name" type="text" name="name" placeholder="  First Name">
-				<input id="input_name" ng-model="usersCtrl.newUser.last_name" type="text" name="name" placeholder="  Last Name"><br>
+				<input id="input_name" ng-model="productsCtrl.newProduct.first_name" type="text" name="name" placeholder="  First Name">
+				<input id="input_name" ng-model="productsCtrl.newProduct.last_name" type="text" name="name" placeholder="  Last Name"><br>
 				<label>Are you attending? *</label>
-				<input id="input_email" ng-model="usersCtrl.newUser.attending" type="text" name="attending" placeholder="  type here..."><br>
+				<input id="input_email" ng-model="productsCtrl.newProduct.attending" type="text" name="attending" placeholder="  type here..."><br>
 				<label>Who else is comming with you? *</label>
-				<input id="input_email" ng-model="usersCtrl.newUser.who_else" type="text" name="who_else" placeholder="  type here..."><br>
+				<input id="input_email" ng-model="productsCtrl.newProduct.who_else" type="text" name="who_else" placeholder="  type here..."><br>
 				<label>Message</label><br>
-				<textarea ng-model="usersCtrl.newUser.comment" placeholder="  type here..." name="comment"></textarea>
+				<textarea ng-model="productsCtrl.newProduct.comment" placeholder="  type here..." name="comment"></textarea>
 				<div id="rsvp_div">
-					<input id="rsvp" type="submit" value="RSVP" ng-click="usersCtrl.create(usersCtrl.newUser)">
+					<button id="rsvp" type="submit" value="RSVP" ng-click="productsCtrl.addProduct(productsCtrl.newProduct)">
 				</div>
 			</form>
 		</div>
@@ -138,8 +138,8 @@
 		margin-top: 3%;
 		display: inline-block;
 
-
-		color: #808080;
+		color: black;
+		/*color: #808080;*/
 	}
 	#ola_font:hover
 	{
@@ -257,7 +257,7 @@
   		height: 100%;
   		font-size: 1.5em;
   		color: white;
-  		background-color: green;
+  		background-color: lightgrey;
   		border-radius: 10px;
   	}
   	#rsvp_div
@@ -265,6 +265,7 @@
   		width: 100%;
   		text-align: center;
   		margin: auto;
+  		margin-bottom: 33%;
   	}
 
 </style>
