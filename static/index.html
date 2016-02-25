@@ -31,14 +31,19 @@
 			<!-- <h1 id="ola_font3">Lena & Ola</h1> -->
 			<!-- <h1 id="ola_font4">Lena & Ola</h1> -->
 			<!-- <h1 id="ola_font5">Lena & Ola</h1> -->
+			<!-- <a href="#/wedding_event"> -->
 				<h2 id="ola_date"><i>September 4, 2016</i></h2>
 			<ul>
-				<a href="#/ourstory"><span><li class="title">OUR STORY</li></span></a>
-				<a href="#/wedding_events"><span><li class="title">WEDDING <i>&</i> EVENTS</li></span></a>
-					
-				<a href="#/hotels2"><span><li class="title">HOTEL <i>&</i> SITES</li></span></a>
-				<a href="#/registry"><span><li class="title">REGISTRY</li></span></a>
-				<a href="#/rsvp"><span><li class="title">RSVP</li></span></a>
+				<li class="title"><a href="#/ourstory"><span>OUR STORY</span></a></li>
+				<li class="title"><span>WEDDING <i>&</i> EVENTS</span></a>
+					<ul>
+						<li class="sub_title"><a href="#/wedding_events">Wedding Schedule</a></li>
+						<li class="sub_title"><a href="#/thursday">Swedish Dinner</a></li>
+					</ul>
+				</li>
+				<li class="title"><a href="#/hotels2"><span>HOTEL <i>&</i> SITES</span></a></li>
+				<li class="title"><a href="#/registry"><span>REGISTRY</span></a></li>
+				<li class="title"><a href="#/rsvp"><span>RSVP</span></a></li>
 			</ul>
 				
 			
@@ -110,6 +115,30 @@
 		width: 100%;
 		margin: auto;
 		padding-top: 5%;
+	}
+	#top_banner > ul > li
+	{
+		/*outline: 1px solid green;*/
+		display: inline-block;
+		/*float: center;*/
+	}
+	#top_banner > ul > li > ul
+	{
+		/*outline: 1px solid green;*/
+		background: lightgrey;
+		opacity: 0;
+		transition: opacity 1s;
+		-webkit-transition: opacity 1s;
+		-moz-transition: opacity 1s;
+		-o-transition: opacity 1s;
+		-mstransition: opacity 1s;
+		/*float: center;*/
+	}
+	#top_banner > ul > li:hover > ul
+	{
+		/*outline: 1px solid green;*/
+		opacity: 1;
+		/*float: center;*/
 	}
 	
 	
