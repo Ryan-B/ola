@@ -34,16 +34,16 @@
 			<!-- <a href="#/wedding_event"> -->
 				<h2 id="ola_date"><i>September 4, 2016</i></h2>
 			<ul>
-				<li class="title"><a href="#/ourstory"><span>OUR STORY</span></a></li>
-				<li class="title"><span>WEDDING <i>&</i> EVENTS</span></a>
+				<li class="title"><a href="#/ourstory">OUR STORY</a></li>
+				<li class="title">WEDDING <i>&</i> EVENTS</a>
 					<ul>
 						<li class="sub_title"><a href="#/wedding_events">Wedding Schedule</a></li>
 						<li class="sub_title"><a href="#/thursday">Swedish Dinner</a></li>
 					</ul>
 				</li>
-				<li class="title"><a href="#/hotels2"><span>HOTEL <i>&</i> SITES</span></a></li>
-				<li class="title"><a href="#/registry"><span>REGISTRY</span></a></li>
-				<li class="title"><a href="#/rsvp"><span>RSVP</span></a></li>
+				<li class="title"><a href="#/hotels2">HOTEL <i>&</i> SITES</a></li>
+				<li class="title"><a href="#/registry">REGISTRY</a></li>
+				<li class="title"><a href="#/rsvp">RSVP</a></li>
 			</ul>
 				
 			
@@ -114,14 +114,16 @@
 		height: 100%;
 		width: 100%;
 		margin: auto;
-		padding-top: 5%;
+		/*padding-top: 5%;*/
 	}
 	#top_banner > ul > li
 	{
 		/*outline: 1px solid green;*/
 		display: inline-block;
+
 		/*float: center;*/
 	}
+	
 	#top_banner > ul > li > ul
 	{
 		/*outline: 1px solid green;*/
@@ -138,7 +140,42 @@
 	{
 		/*outline: 1px solid green;*/
 		opacity: 1;
+		color: white;
 		/*float: center;*/
+	}
+	#top_banner > ul > li:hover > ul > li:hover
+	{
+		/*outline: 1px solid green;*/
+		background-color: grey;
+
+		/*float: center;*/
+	}
+	.title
+	{
+		font-size: 1em;
+		/*font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; */
+		font-family: 'Radley', serif;
+   		font-weight: 100;
+		display: inline;
+		vertical-align: top;
+		margin: 1.9%;
+		text-decoration: none;
+		color: grey;
+	}
+	.title:hover
+	{
+		color: #c2d6d6;
+		/*color: lime;*/
+	}
+	a
+	{
+		text-decoration: none;
+		color: grey;	
+	}
+	a:hover
+	{
+		text-decoration: none;
+		color: #c2d6d6;	
 	}
 	
 	
