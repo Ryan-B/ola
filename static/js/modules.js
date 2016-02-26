@@ -45,5 +45,10 @@ app.config(function($routeProvider){
 		controllerAs: 'productsCtrl',
 		templateUrl: '/partials/thursday.partial.html'
 	})
+	.when('/sports', {
+		controller: 'ProductsController',
+		controllerAs: 'productsCtrl',
+		templateUrl: '/partials/sports.partial.html'
+	})
 
 });

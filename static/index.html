@@ -10,62 +10,48 @@
   	<script type="text/javascript" src="/js/controllers.ctrl.js"></script>
 	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script type="text/javascript" src="/js/lib/jquery.timer.js"></script>
-	<!-- <link href='https://fonts.googleapis.com/css?family=Ruthie' rel='stylesheet' type='text/css'> -->
 	<link href='https://fonts.googleapis.com/css?family=Radley:400,400italic' rel='stylesheet' type='text/css'>
-	<!-- <link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'> -->
 	<link href='https://fonts.googleapis.com/css?family=Monsieur+La+Doulaise' rel='stylesheet' type='text/css'>
-	<!-- <link href='https://fonts.googleapis.com/css?family=Lovers+Quarrel' rel='stylesheet' type='text/css'> -->
-	<!-- <link href='https://fonts.googleapis.com/css?family=Codystar:300' rel='stylesheet' type='text/css'> -->
-	<!-- <link href='https://fonts.googleapis.com/css?family=Faster+One' rel='stylesheet' type='text/css'> -->
-	
-	
 </head>
 <body>
 	<div id="main_section">
 		<div id="top_banner">
-			<!-- <h1 id="ola"><i>Lena & Ola</i></h1> -->
 			<div id="title_div">
 				<a href="#/"><h1 id="ola_font">Lena <i>&</i> Ola</h1></a>
 			</div>
-			<!-- <h1 id="ola_font2">Lena & Ola</h1> -->
-			<!-- <h1 id="ola_font3">Lena & Ola</h1> -->
-			<!-- <h1 id="ola_font4">Lena & Ola</h1> -->
-			<!-- <h1 id="ola_font5">Lena & Ola</h1> -->
-			<!-- <a href="#/wedding_event"> -->
+				
 				<h2 id="ola_date"><i>September 4, 2016</i></h2>
+			
 			<ul>
 				<li class="title"><a href="#/ourstory">OUR STORY</a></li>
-				<li class="title">WEDDING <i>&</i> EVENTS</a>
+				<li class="title"><a href="#/wedding_events">WEDDING <i>&</i> EVENTS</a>
 					<ul>
-						<li class="sub_title"><a href="#/wedding_events">Wedding Schedule</a></li>
-						<li class="sub_title"><a href="#/thursday">Swedish Dinner</a></li>
+						<li class="sub_title"><a href="#/wedding_events" id="li_top">Wedding Schedule</a></li>
+						<li class="sub_title"><a href="#/thursday">Thursday 1st</a></li>
+						<li class="sub_title"><a href="#/friday">Friday 2nd</a></li>
+						<li class="sub_title"><a href="#/saturday">Saturday 3rd</a></li>
+						<li class="sub_title"><a href="#/sunday">Sunday 4th</a></li>
+
 					</ul>
 				</li>
-				<li class="title"><a href="#/hotels2">HOTEL <i>&</i> SITES</a></li>
+				<li class="title"><a href="#/hotels2">HOTEL <i>&</i> SITES</a>
+					<ul>
+						<li class="sub_title"><a href="#/hotels2" id="li_top">Choice Hotels</a></li>
+						<li class="sub_title"><a href="#/sports">Sporting Events</a></li>
+						<li class="sub_title"><a href="#/explore">Explore Seattle</a></li>
+						<li class="sub_title"><a href="#/saturday">Music</a></li>
+						<li class="sub_title"><a href="#/sunday">Restaurants</a></li>
+
+					</ul>
 				<li class="title"><a href="#/registry">REGISTRY</a></li>
 				<li class="title"><a href="#/rsvp">RSVP</a></li>
 			</ul>
-				
-			
+		
 		</div>
+
 		<div id="main_div">
-			
 			<div ng-view id="stats"></div>
-			<!-- <img id="beach" src="img/slideshow/1.jpg" alt="beach" id="myImage" name="myImage"></a>
-			<h3 id="come">COME CELEBRATE OUR WEDDING</h3>
-			<div id="inner_div">
-				<h2 class="names">Lena Barouh</h2>
-				<h6 id="and"><i>-and-</i></h6>
-				<h2 class="names">Ola Järvegren</h2>
-			</div>
-				<h5 id="date_2">Sunday, September 4th, 2016</h5>
-			<div id="bottom_div">
-				
-				<p id="bottom_message">Lena and Ola joyfully request the pleasure of your company as we speak our vows and join in marriage in the presence of family and friends.</p>
-			</div> -->
-
-
-		 </div>
+		</div>
 		
 	</div>
 </body>
@@ -82,51 +68,31 @@
 	body
 	{
 		margin: 7.5%;
-		
-		/*background-color: #f0f0f5;*/
 		background-color: #f5f5ef;
 	}
 	#main_section
 	{
 		height: 100%;
 		width: 100%;
-		/*padding: 10%;*/
-		/*border: 1px dotted black;*/
-		/*background-color: #f5f5ef;*/
 		background-color: white;
-		/*border: .5px solid lightgrey;*/
-
 	}
 	#top_banner
 	{
-		
 		width: 100%;
-		/*border: 1px solid purple;*/
-		background-image: url('');
-	    background-repeat: no-repeat;
-	    /*background-position: 50% 0;*/
-	   /* -ms-background-size: cover;*/
-	    background-size: cover;
-	    /*background-color: #b3f0ff;*/
 	}
 	#main_div
 	{
 		height: 100%;
 		width: 100%;
 		margin: auto;
-		/*padding-top: 5%;*/
 	}
 	#top_banner > ul > li
 	{
-		/*outline: 1px solid green;*/
 		display: inline-block;
-
-		/*float: center;*/
 	}
 	
 	#top_banner > ul > li > ul
 	{
-		/*outline: 1px solid green;*/
 		background: lightgrey;
 		opacity: 0;
 		transition: opacity 1s;
@@ -134,26 +100,24 @@
 		-moz-transition: opacity 1s;
 		-o-transition: opacity 1s;
 		-mstransition: opacity 1s;
-		/*float: center;*/
 	}
 	#top_banner > ul > li:hover > ul
 	{
-		/*outline: 1px solid green;*/
 		opacity: 1;
 		color: white;
-		/*float: center;*/
+	}
+	#top_banner > ul > li:hover > ul > li
+	{
+		text-align: left;
 	}
 	#top_banner > ul > li:hover > ul > li:hover
 	{
-		/*outline: 1px solid green;*/
 		background-color: grey;
-
-		/*float: center;*/
+		text-align: left;
 	}
 	.title
 	{
 		font-size: 1em;
-		/*font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; */
 		font-family: 'Radley', serif;
    		font-weight: 100;
 		display: inline;
@@ -165,7 +129,6 @@
 	.title:hover
 	{
 		color: #c2d6d6;
-		/*color: lime;*/
 	}
 	a
 	{
@@ -176,6 +139,58 @@
 	{
 		text-decoration: none;
 		color: #c2d6d6;	
+	}
+
+	.sub_title
+	{
+		text-decoration: none;
+		display: block;
+		text-align: left;
+	}
+	#li_top
+	{
+		color: white;
+	}
+	
+	ul
+	{
+		text-align: center;
+		padding: 0;
+	}
+	#ola_date
+	{
+		font-family: 'Radley', cursive;
+		text-align: center;
+		font-size: 1.25em;
+		color: grey;
+		margin-bottom: 5%;
+
+
+	}
+	#ola_font
+	{
+		font-family: 'Radley', serif;
+		text-align: center;
+		font-size: 5em;
+		margin-bottom: 1.5%;
+		margin-top: 3%;
+		display: inline-block;
+		font-weight: 100;
+		color: black;
+	}
+	#ola_font:hover
+	{
+		color: #c2d6d6;
+	}
+	#title_div
+	{
+		width: 100%;
+		margin: auto;
+		text-align: center;
+	}
+	#top_banner
+	{
+		width: 100%;
 	}
 	
 	
