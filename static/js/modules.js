@@ -60,5 +60,25 @@ app.config(function($routeProvider){
 		controllerAs: 'productsCtrl',
 		templateUrl: '/partials/huskies.partial.html'
 	})
+	.when('/friday', {
+		controller: 'ProductsController',
+		controllerAs: 'productsCtrl',
+		templateUrl: '/partials/friday.partial.html'
+	})
+	.when('/saturday', {
+		controller: 'ProductsController',
+		controllerAs: 'productsCtrl',
+		templateUrl: '/partials/saturday.partial.html'
+	})
+	.when('/explore_seattle', {
+		controller: 'ProductsController',
+		controllerAs: 'productsCtrl',
+		templateUrl: '/partials/explore_seattle.partial.html'
+	})
+	.when('/water_taxi', {
+		controller: 'ProductsController',
+		controllerAs: 'productsCtrl',
+		templateUrl: '/partials/water_taxi.partial.html'
+	})
 
 });
