@@ -1,8 +1,9 @@
 
 	<div id="inner_div">
+		<h1>Trusted Rental Sites</h1>
 		<ul>
-			<li><a href="https://www.airbnb.com/s/Seattle--WA?s_tag=vGDiTQ24">Seattle airbnb</a></li>
-			<li><a href="https://www.vrbo.com/vacation-rentals/usa/washington/puget-sound/seattle">VRBO Seattle</a></li>
+			<li><a href="https://www.airbnb.com/s/Seattle--WA?s_tag=vGDiTQ24"><img id="rental" src="/img/airbnb.jpeg"></a></li>
+			<li><a href="https://www.vrbo.com/vacation-rentals/usa/washington/puget-sound/seattle"><img id="rental1" src="/img/vrbo.png"></a></li>
 		</ul>
 		
 		<div class="hotel">
@@ -44,16 +45,14 @@
 	{
 		width: 70%;
 		margin: auto;
-		padding-top: 5%;
 		padding-bottom: 5%;
-		/*border-top: 1px solid black;*/
-		/*border-bottom: 1px solid black;*/
+		
 	}
 	img
 	{
 		width: 49%;
 		height: 49%;
-		border: 1px solid black;
+		border: 2px solid black;
 		margin: auto;
 	}
 	h3
@@ -76,7 +75,7 @@
 	}
 	h1
 	{
-		/*margin-bottom: 5%;*/
+		margin-bottom: 3%;
 		text-align: center;
 		font-family: "Radley", serif;
 		/*background-color: lightgrey;*/
@@ -157,6 +156,35 @@
 	#inner_div > ul > li > a:hover
 	{
 		color: blue;
+	}
+	#rental
+	{
+		opacity: .5;
+		width: 40%;
+		height: 40%;
+		border: none;
+	}
+	#rental1
+	{
+		opacity: .5;
+		width: 20%;
+		height: 20%;
+		border: none;
+		/*vertical-align: top;*/
+	}
+	#rental1:hover
+	{
+		opacity: 1;
+		width: 20%;
+		height: 20%;
+		border: none;
+	}
+	#rental:hover
+	{
+		opacity: 1;
+		width: 40%;
+		height: 40%;
+		border: none;
 	}
 
 </style>

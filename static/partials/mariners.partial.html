@@ -1,13 +1,16 @@
 <div id="main_div">
 	<div id="img_div" >
-		<h2>Check out Major League Baseball at one of the most scenic downtown Ballparks in all of America, Safeco Field.  The Seattle Mariners play the Los Angeles Angels on Friday night and the Texas Rangers on Monday afternoon.  There is nothing like a summer day game in Seattle!</h2>
+		<h1>Seattle Mariner Baseball</h1>
 		<img src="/img/safeco.jpg">
-			<ul id="game_ul">
-				<li class="game_dates">Friday 2nd 7:30pm</li>
-				<li class="game_dates">Monday 5th 1:10pm</li>
-			</ul>
+			
+				<h2>Friday 2nd 7:30pm vs Los Angeles Angels</h2>
+				<h2 class="ms_h2">Monday 5th 1:10pm vs Texas Rangers</h2>
+			
+		<!-- <h2>The Seattle Mariners play the Los Angeles Angels on Friday night and the Texas Rangers on Monday afternoon.  </h2> -->
 		<img src="/img/day_game.jpg">
+		<h2 class="ms_h2">There is nothing like a summer day game in Seattle!</h2>
 		<img src="/img/felix.jpg">
+		<h2 class="ms_h2">Länge leve kungen</h2>
 	</div>
 </div>
 
@@ -25,20 +28,20 @@
 	}
 	#img_div
 	{
-		width: 60%;
+		width: 66.7%;
 		margin: auto;
-		padding-top: 5%;
+		/*padding-top: 5%;*/
 	}
 	img
 	{
 		width: 100%;
 		height: 100%;
-		border: 3px solid black;
-		margin-bottom: 10%;
+		border: 2px solid black;
+		margin-bottom: 1%;
 	}
 	.game_dates
 	{
-		display: inline;
+		display: block;
 		margin: 0 1.75% 0 1.75%;
 		font-family: "Radley", serif;
 		font-size: 1.25em;
@@ -46,15 +49,25 @@
 	}
 	h2
 	{
-		text-align: justify;
+		text-align: center;
 		color: #4b4640;
-		margin-bottom: 5%;
+		margin-bottom: 3%;
+		font-family: "Radley", serif;
+	}
+	h1
+	{
+		text-align: center;
+		font-family: "Radley", serif;
+		margin-bottom: 3%;
 	}
 	#game_ul
 	{
+		margin-bottom: 3%;
+	}
+	.ms_h2
+	{
 		margin-bottom: 10%;
 	}
-	
 
 
 </style>
