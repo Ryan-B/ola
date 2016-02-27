@@ -1,5 +1,9 @@
 
 	<div id="inner_div">
+		<ul>
+			<li><a href="https://www.airbnb.com/s/Seattle--WA?s_tag=vGDiTQ24">Seattle airbnb</a></li>
+			<li><a href="https://www.vrbo.com/vacation-rentals/usa/washington/puget-sound/seattle">VRBO Seattle</a></li>
+		</ul>
 		
 		<div class="hotel">
 			<h1>The Deca Hotel</h1>
@@ -72,9 +76,10 @@
 	}
 	h1
 	{
-		margin-bottom: 5%;
+		/*margin-bottom: 5%;*/
 		text-align: center;
 		font-family: "Radley", serif;
+		/*background-color: lightgrey;*/
 	}
 	.hotel
 	{
@@ -136,6 +141,22 @@
 		width: 50%;
 		text-align: center;
 	}
-	
+	#inner_div > ul
+	{
+		margin-bottom: 10%;
+	}
+	#inner_div > ul > li
+	{
+		display: inline;
+		margin: 0 5% 5%;
+	}
+	#inner_div > ul > li > a
+	{
+		font-size: 2em;
+	}
+	#inner_div > ul > li > a:hover
+	{
+		color: blue;
+	}
 
 </style>

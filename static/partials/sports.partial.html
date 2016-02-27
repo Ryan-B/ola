@@ -3,13 +3,21 @@
 	
 			
 <div id="main_div">
-	
+	<h1>Sports in Seattle</h1>
 	<div id="inner_div">
-		<img src="/img/safeco.jpg">
-		<img id="stadium" src="/img/stadium.png">
-		<img id="idaho" src="img/idaho.jpg">
+		
+		<a href="#/mariners"><img id="baseball"src="/img/baseball.jpg"></a>
+		
 	</div>
-
+	<div id="inner_div">
+		
+		<a href="#/huskies"><img id="football" src="/img/football.jpg"></a>
+		
+	</div>
+	<!-- <div id="inner_div">
+		<img id="idaho" src="img/idaho.jpg">
+		<img id="stadium" src="/img/stadium.png">
+	</div> -->
 </div>
 
 
@@ -17,26 +25,57 @@
 	
 	#main_div
 	{
-		width: 100%;
+		width: 50%;
 		height: 100%;
 		margin: auto;
 		background-color: white;
+		padding-bottom: 10%;
 	}
 	#inner_div
 	{
-		width: 60%;
+		width: 49.5%;
+		height: 100%;
 		margin: auto;
+		display: inline-block;
+		vertical-align: top;
 		/*padding-top: 5%;*/
 	}
 	img
 	{
-		width: 100%;
-		height: 100%;
-		border: 1px solid black;
+		width: 50%;
+		height: 50%;
+		display: inline-block;
 		margin: auto;
-		margin-top: 10%;
-		
+		margin-left: 3%; 
+		/*padding: .5%;*/
 
 	}
+	img:hover
+	{
+		
+		opacity: .5;
+	}
+	
+
+	h1
+	{
+		font-family: 'Radley', serif;
+		text-align: center;
+		font-size: 2em;
+
+	}
+	#baseball
+	{
+		float: right;
+		vertical-align: top;
+		margin-right: 3%;
+	}
+	#football
+	{
+		margin-top: 52px;
+	}
+		
+		
+
 
 </style>
