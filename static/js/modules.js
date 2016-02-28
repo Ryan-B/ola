@@ -80,5 +80,11 @@ app.config(function($routeProvider){
 		controllerAs: 'productsCtrl',
 		templateUrl: '/partials/water_taxi.partial.html'
 	})
+	.when('/discovery', {
+		controller: 'ProductsController',
+		controllerAs: 'productsCtrl',
+		templateUrl: '/partials/discovery.partial.html'
+	})
+
 
 });
