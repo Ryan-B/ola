@@ -85,6 +85,11 @@ app.config(function($routeProvider){
 		controllerAs: 'productsCtrl',
 		templateUrl: '/partials/discovery.partial.html'
 	})
+	.when('/sunday', {
+		controller: 'ProductsController',
+		controllerAs: 'productsCtrl',
+		templateUrl: '/partials/sunday.partial.html'
+	})
 
 
 });

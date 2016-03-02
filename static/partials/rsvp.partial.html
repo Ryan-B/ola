@@ -11,8 +11,8 @@
 				<input id="input_name" ng-model="productsCtrl.newProduct.last_name" type="text" name="name" placeholder="  Last Name"><br>
 				<label>Are you attending? *</label>
 				<input id="input_email" ng-model="productsCtrl.newProduct.attending" type="text" name="attending" placeholder="  type here..."><br>
-				<label>Who else is comming with you? *</label>
-				<input id="input_email" ng-model="productsCtrl.newProduct.who_else" type="text" name="who_else" placeholder="  type here..."><br>
+				<label>How many people are coming with you? *</label><br>
+				<input id="input_how" ng-model="productsCtrl.newProduct.who_else" type="number" name="who_else" placeholder="1"><br>
 				<label>Message</label><br>
 				<textarea ng-model="productsCtrl.newProduct.comment" placeholder="  type here..." name="comment"></textarea>
 				<div id="rsvp_div">
@@ -105,6 +105,27 @@
   		vertical-align: top;
   	}
   	#input_name:hover
+  	{
+  		background-color: grey;
+  	}
+  	#input_how
+	{
+		width: 5%;
+		height: 100%;
+		border: 1px solid grey;
+		background-color: lightgrey;
+		border-radius: 10px;
+		font-size: 2em;
+		margin-bottom: 3%;
+
+	}
+	#input_how::-webkit-input-placeholder 
+	{ 
+  		color: white;
+  		margin-left: 3%;
+  		vertical-align: top;
+  	}
+  	#input_how:hover
   	{
   		background-color: grey;
   	}
