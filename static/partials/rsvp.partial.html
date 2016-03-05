@@ -19,7 +19,6 @@
 					<button id="rsvp" type="submit" value="RSVP" ng-click="productsCtrl.addProduct(productsCtrl.newProduct)">RSVP</button>
 				</div>
 
-			<a href="#/hidden"><div id="hidden"></div></a>
 			</form>
 		</div>
 		<div id="rsvp_info" ng-repeat="product in productsCtrl.products">
@@ -31,6 +30,7 @@
 			<h5>Message:</h5><p ng-bind="product.comment"></p>
 			<button id="delete" ng-click="productsCtrl.removeProduct(product)">Remove</button>
 		</div>
+			<a href="#/hidden"><div id="hidden"></div></a>
 	</div>
 
 <style type="text/css">

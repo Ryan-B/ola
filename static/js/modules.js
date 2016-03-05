@@ -90,6 +90,11 @@ app.config(function($routeProvider){
 		controllerAs: 'productsCtrl',
 		templateUrl: '/partials/sunday.partial.html'
 	})
+	.when('/maps', {
+		controller: 'MapsController',
+		controllerAs: 'mapsCtrl',
+		templateUrl: '/partials/maps2.partial.html'
+	})
 
 
 });
