@@ -1,9 +1,16 @@
 <div id="main_div">
-	<h1>Sports in Seattle</h1>
-		<ul>
-			<li class="logo"><a href="#/mariners"><img id="baseball"src="/img/baseball.jpg"></a></li>
+	<h1>Sporting Events</h1>
+		<!-- <ul>
+			<li class="logo"><a href="#/mariners"><img id="baseball"src="/img/baseball.png"></a>Monday 5th 1:10pm</li>
+			
 			<li class="logo"><a href="#/huskies"><img id="football" src="/img/football.jpg"></a></li>
-		</ul>
+		</ul> -->
+		<div id="sports_div">
+			<img src="/img/baseball.png">
+		</div>
+		<div id="sports_div">
+			<img src="/img/football.jpg">
+		</div>
 </div>
 	
 
@@ -12,7 +19,7 @@
 	
 	#main_div
 	{
-		width: 100%;
+		width: 60%;
 		height: 100%;
 		margin: auto;
 		background-color: white;
@@ -30,9 +37,10 @@
 	}
 	img
 	{
-		width: 10%;
-		height: 10%;
+		width: 80%;
+		height: 80%;
 		opacity: .75;
+
 		/*border: 1px solid black;*/
 	}
 	img:hover
@@ -48,6 +56,11 @@
 		text-align: center;
 		font-size: 2em;
 
+	}
+	#sports_div
+	{
+		width: 20%;
+		margin: auto;
 	}
 	
 	
