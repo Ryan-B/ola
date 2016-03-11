@@ -13,7 +13,7 @@ app.controller('HomeController', function($interval, $scope) {
 	console.log("HomeController Loaded")
 
 		var dimages= [];
-		var numImages=7;
+		var numImages=20;
 
 		for (i=0; i<numImages; i++) {
 		  // dimages[i]=new Image();
@@ -30,7 +30,7 @@ app.controller('HomeController', function($interval, $scope) {
 				k = 0;
 			}
 			this.image = dimages[k];
-		}.bind(this), 3000);
+		}.bind(this), 2000);
 
 	$scope.$on('$destroy', function() {
 		$interval.cancel(intervalId);
