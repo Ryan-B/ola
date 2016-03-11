@@ -4,20 +4,25 @@
 		<div class="register" ng-controller="ProductsController as productsCtrl">
 			<h1>Please Register to RSVP</h1>
 			<form>
-				<label>Email Address *</label>
-				<input id="input_email" ng-model="productsCtrl.newProduct.email" type="email" name="email" placeholder="  Email Address">
-				<label>Name *</label><br>
-				<input id="input_name" ng-model="productsCtrl.newProduct.first_name" type="text" name="name" placeholder="  First Name">
-				<input id="input_name" ng-model="productsCtrl.newProduct.last_name" type="text" name="name" placeholder="  Last Name"><br>
-				<label>Are you attending? *</label>
-				<input id="input_email" ng-model="productsCtrl.newProduct.attending" type="text" name="attending" placeholder="  type here..."><br>
-				<label>How many people are coming with you? *</label><br>
+				
+				<input id="input_name" ng-model="productsCtrl.newProduct.last_name" type="text" name="name" placeholder="  Last Name">
+				<input id="input_name" ng-model="productsCtrl.newProduct.first_name" type="text" name="name" placeholder="  First Name"><br>
+				<input id="radio" type="radio" name="attending" value="yes" ng-model="productsCtrl.newProduct.attending"><label> I'll be there! </label><br> 
+			    <input type="radio" name="attending" value="no" ng-model="productsCtrl.newProduct.attending"><label> I can't make it!</label><br>
+			    <button id="rsvp" type="submit">Submit</button><br>
+				<input id="input_email" ng-model="productsCtrl.newProduct.email" type="email" name="email" placeholder="  Email Address"><br>
+				<input id="vegan" type="radio" name="vegan" value="vegan" ng-model="productsCtrl.newProduct.attending"><label> Vegetarian/Vegan?</label><br>
+				<input id="input_email" ng-model="productsCtrl.newProduct.songs" type="email" name="email" placeholder="  Song Request  (artist, title)"><br>
+				<input id="input_email" ng-model="productsCtrl.newProduct.fact" type="email" name="fact" placeholder="  An interesting fact about you!"><br>
+				<button id="guest" type="submit">+ Add Guest</button> <button id="rsvp" type="submit"> RSVP </button><br>
+				<!-- <input type="radio" name="vegan" ng-model="productsCtrl.newProduct.vegan"><label>Vegetarian/Vegan?</label> -->
+				<!-- <label>How many people are coming with you? *</label><br>
 				<input id="input_how" ng-model="productsCtrl.newProduct.who_else" type="number" name="who_else" placeholder="1"><br>
 				<label>Message</label><br>
-				<textarea ng-model="productsCtrl.newProduct.comment" placeholder="  type here..." name="comment"></textarea>
-				<div id="rsvp_div">
+				<textarea ng-model="productsCtrl.newProduct.comment" placeholder="  type here..." name="comment"></textarea> -->
+				<!-- <div id="rsvp_div">
 					<button id="rsvp" type="submit" value="RSVP" ng-click="productsCtrl.addProduct(productsCtrl.newProduct)">RSVP</button>
-				</div>
+				</div> -->
 
 			</form>
 		</div>
@@ -54,27 +59,33 @@
 		margin-top: 0;
 		text-align: center;
 		font-family: "Radley", serif;
-		color: lightgrey;
+		color: black;
+	}
+	p
+	{
+		font-family: "Radley", serif;
 	}
 	
 	form
 	{
 		margin-bottom: 5%;
+		margin: auto;
+		text-align: center;
 	}
 	.register
 	{
-		width: 75%;
+		width: 50%;
 		margin: auto;
 	}
 	#input_email
 	{
-		width: 99.33%;
+		width: 80%;
 		height: 100%;
 		border: 1px solid grey;
 		background-color: lightgrey;
 		border-radius: 10px;
 		font-size: 2em;
-		margin-bottom: 5%;
+		margin-bottom: 3%;
 
 	}
 	#input_email::-webkit-input-placeholder 
@@ -82,6 +93,7 @@
   		color: white;
   		margin-left: 3%;
   		vertical-align: top;
+  		font-family: "Radley", serif;
   	}
   	#input_email:hover
   	{
@@ -89,7 +101,7 @@
   	}
   	#input_name
 	{
-		width: 49%;
+		width: 39.5%;
 		height: 100%;
 		border: 1px solid grey;
 		background-color: lightgrey;
@@ -103,6 +115,8 @@
   		color: white;
   		margin-left: 3%;
   		vertical-align: top;
+  		font-family: "Radley", serif;
+
   	}
   	#input_name:hover
   	{
@@ -150,23 +164,39 @@
   	}
   	#rsvp
   	{
-  		width: 20%;
-  		height: 100%;
+  		
+  		
   		font-size: 1.5em;
   		color: white;
   		background-color: black;
   		border-radius: 10px;
-  		margin-top: 7.5%;
+  		margin: 3% 0 3% 0;
+  		font-family: "Radley", serif;
 
   	}
   	#rsvp:hover
   	{
-  		width: 20%;
-  		height: 100%;
+  		
   		font-size: 1.5em;
   		color: white;
   		background-color: grey;
   		border-radius: 10px;
+  	}
+  	#guest
+  	{
+  		
+  		
+  		font-size: 1.5em;
+  		color: white;
+  		background-color: black;
+  		border-radius: 10px;
+  		margin: 3% 0 3% 0;
+  		font-family: "Radley", serif;
+
+  	}
+  	#guest:hover
+  	{
+  		background-color: grey;
   	}
   	#rsvp_div
   	{
@@ -196,6 +226,19 @@
   	{
   		width: 100%;
   		height: 50px;
+  	}
+  	label
+  	{
+  		font-family: "Radley", serif;
+  		font-size: 1.5em;
+  	}
+  	#vegan
+  	{
+  		margin-bottom: 3%;
+  	}
+  	#radio
+  	{
+  		margin-bottom: 3%;
   	}
   	
 </style>
