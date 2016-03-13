@@ -2,7 +2,7 @@
 	<div id="main_div">
 		
 		<div class="register" ng-controller="ProductsController as productsCtrl">
-			<h1>Please Register to RSVP</h1>
+			<h2>Please Register to RSVP</h2>
 			<form>
 				
 				<input id="input_name" ng-model="productsCtrl.newProduct.last_name" type="text" name="name" placeholder="  Last Name">
@@ -101,7 +101,7 @@
   	}
   	#input_name
 	{
-		width: 49%;
+		width: 48%;
 		height: 100%;
 		border: 1px solid grey;
 		background-color: lightgrey;
@@ -243,6 +243,8 @@
   	h2
   	{
   		margin-bottom: 2%;
+  		text-align: center;
+  		font-family: "Radley", serif;
   	}
   	
 </style>
