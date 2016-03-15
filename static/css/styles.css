@@ -155,29 +155,18 @@
 	{
 		width: 100%;
 	}
-	#main_div
-	{
-		width: 100%;
-		height: 100%;
-		margin: auto;
-		background-color: white;
-
-	}
+	
 	#img_div
 	{
-		width: 80%;
-		height: 80%;
+		width: 86%;
 		margin: auto;
 		margin-bottom: 5%;
 	}
 	#inner_div
 	{
-		width: 80%;
+		width: 86%;
 		margin: auto;
-		/*padding-top: 5%;*/
 		padding-bottom: 5%;
-		/*border-top: 1px solid black;*/
-		/*border-bottom: 1px solid black;*/
 	}
 	img
 	{
@@ -204,20 +193,30 @@
 		text-align: center;
 		font-family: "Radley", serif;
 	}
-	h1
+	.day_p
 	{
-		margin-bottom: 15%;
+		margin: 0 0 2% 0;
+		color: grey;
 		text-align: center;
 		font-family: "Radley", serif;
 	}
-	
-	
+	.day_h2
+	{
+		text-align: center;
+		font-family: "Radley", serif;
+		margin: 0 0 2% 0;
+	}
+	.day_h3
+	{
+		text-align: center;
+		font-family: "Radley", serif;
+		margin: 0 0 2% 0;
+	}	
 	#come
 	{
 		text-align: center;
 		font-family: 'Radley', serif;
 		font-size: 90%;
-		/*color: grey;*/
 		margin-bottom: 3%;
 		margin-top: 3%;
 		font-weight: 100;
