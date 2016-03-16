@@ -243,6 +243,8 @@
 		color: black;
 		text-align: center;
 		font-family: "Radley", serif;
+		border-bottom: 1px solid black;
+		display: inline-block;
 	}
 	.day_h2
 	{
@@ -351,8 +353,8 @@
 	}
 	.day_plan:hover
 	{
-		background-color: grey;
-		color: white;
+		/*background-color: grey;*/
+		color: darkslateblue;
 	}
 	#sunday2
 	{
@@ -674,6 +676,17 @@
 		color: grey;
 		margin-bottom: 5%
 	}
+	.title
+	{
+		font-size: 1.25em;
+		font-family: 'Radley', serif;
+   		font-weight: 100;
+		display: inline;
+		vertical-align: top;
+		margin: 0 2.5% 0 2.5%;
+		text-decoration: none;
+		color: grey;
+	}
 	#come
 	{
 		text-align: center;
@@ -765,12 +778,18 @@
 		color: black;
 		font-family: "Radley", serif;
 		margin: 0 0 3% 0;
-		font-size: 2em;
+		font-size: 1.5em;
 	}
 	.events_h3
 	{
 		color: black;
 		font-family: "Radley", serif;
-		font-size: 2em;
+		font-size: 1.5em;
+	}
+	.day_p
+	{
+		color: black;
+		font-family: "Radley", serif;
+		font-size: 1.5em;
 	}
 }
