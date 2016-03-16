@@ -786,10 +786,27 @@
 		font-family: "Radley", serif;
 		font-size: 1.5em;
 	}
+	.events_h3:hover
+	{
+		color: darkslateblue;
+		font-family: "Radley", serif;
+		font-size: 1.5em;
+	}
 	.day_p
 	{
 		color: black;
 		font-family: "Radley", serif;
 		font-size: 1.5em;
 	}
+	#last_day
+	{
+		margin-bottom: 10%;
+	}
+	#day_2
+	{
+		font-size: 1.75em;
+		padding-bottom: 3%;
+	}
+
+
 }
