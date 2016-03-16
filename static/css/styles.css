@@ -151,10 +151,7 @@
 		
 
 	}
-	#ola_font:hover
-	{
-		color: #c2d6d6;
-	}
+	
 	#title_div
 	{
 		width: 100%;
@@ -612,6 +609,10 @@
 	   	/*color: #333333;*/
 		
 
+	}
+	#ola_font:hover
+	{
+		color: #c2d6d6;
 	}
 	#ola_date
 	{
