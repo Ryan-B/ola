@@ -18,12 +18,15 @@ module.exports = (function(){
 		create: function(request, response){
 			console.log('Server / Ctrl / Products - Create', request.body)
 			var product = new Product;
-			product.email = request.body.email;
-			product.first_name = request.body.first_name;
 			product.last_name = request.body.last_name;
+			product.first_name = request.body.first_name;
 			product.attending = request.body.attending;
-			product.who_else = request.body.who_else;
-			product.comment = request.body.comment;
+			// product.vegan = request.body.vegan;
+			product.email = request.body.email;
+			product.song = request.body.song;
+			product.fact = request.body.fact;
+			// product.who_else = request.body.who_else;
+			// product.comment = request.body.comment;
 			product.save(function(err){
 				if(err){
 					console.log(err);

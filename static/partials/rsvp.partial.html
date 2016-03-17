@@ -1,4 +1,4 @@
-<!-- 
+
 	<div id="main_div">
 		
 		<div class="register" ng-controller="ProductsController as productsCtrl">
@@ -9,12 +9,12 @@
 				<input id="input_name" ng-model="productsCtrl.newProduct.first_name" type="text" name="name" placeholder="  First Name"><br>
 				<input id="radio" type="radio" name="attending" value="yes" ng-model="productsCtrl.newProduct.attending"><label> I'll be there! </label><br> 
 			    <input type="radio" name="attending" value="no" ng-model="productsCtrl.newProduct.attending"><label> I can't make it!</label><br>
-			    <button id="rsvp" type="submit">Submit</button><br>
+			    <!-- <button id="rsvp" type="submit">Submit</button><br> -->
 				<input id="input_email" ng-model="productsCtrl.newProduct.email" type="email" name="email" placeholder="  Email Address"><br>
-				<input id="vegan" type="radio" name="vegan" value="vegan" ng-model="productsCtrl.newProduct.attending"><label> Vegetarian/Vegan?</label><br>
-				<input id="input_email" ng-model="productsCtrl.newProduct.songs" type="email" name="email" placeholder="  Song Request  (artist, title)"><br>
-				<input id="input_email" ng-model="productsCtrl.newProduct.fact" type="email" name="fact" placeholder="  An interesting fact about you!"><br>
-				<button id="guest" type="submit">+ Add Guest</button> <button id="rsvp" type="submit"> RSVP </button><br>
+				<input id="vegan" type="radio" name="vegan" value="vegan" ng-model="productsCtrl.newProduct.vegan"><label> Vegetarian/Vegan?</label><br>
+				<input id="input_email" ng-model="productsCtrl.newProduct.song" type="text" name="song" placeholder="  Song Request  (artist, title)"><br>
+				<input id="input_email" ng-model="productsCtrl.newProduct.fact" type="text" name="fact" placeholder="  An interesting fact about you!"><br>
+				<button id="guest" type="submit">+ Add Guest</button> <button id="rsvp" type="submit" ng-click="productsCtrl.addProduct(productsCtrl.newProduct)"> RSVP </button><br>
 				
 
 			</form>
@@ -23,9 +23,9 @@
 			<h5>Name:</h5><p class="rsvp_name" ng-bind="product.first_name"></p>
 					 </h5><p class="rsvp_name" ng-bind="product.last_name"></p>
 			<h5>Attending?</h5><p ng-bind="product.attending"></p>
-			<h5>Who are you Bringing?</h5><p ng-bind="product.who_else"></p>
+			<h5>Shake it?</h5><p ng-bind="product.song"></p>
 			<h5>Email:</h5><p ng-bind="product.email"></p>
-			<h5>Message:</h5><p ng-bind="product.comment"></p>
+			<h5>Interesting!</h5><p ng-bind="product.fact"></p>
 			<button id="delete" ng-click="productsCtrl.removeProduct(product)">Remove</button>
 		</div>
 			<a href="#/hidden"><div id="hidden"></div></a>
@@ -240,4 +240,4 @@
   		font-family: "Radley", serif;
   	}
   	
-</style> -->
+</style>
