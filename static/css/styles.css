@@ -77,12 +77,12 @@
 	}
 	.title
 	{
-		font-size: .5em;
+		font-size: .6em;
 		font-family: 'Radley', serif;
    		font-weight: 100;
 		display: inline;
 		vertical-align: top;
-		margin: .8%;
+		margin: .55%;
 		text-decoration: none;
 		color: grey;
 	}
@@ -246,6 +246,12 @@
 		/*border-bottom: 1px solid black;*/
 		
 	}
+	.event_p
+	{
+		font-size: 1em;
+		margin: 0;
+		padding: 0;
+	}
 	.day_h2
 	{
 		text-align: center;
@@ -372,6 +378,11 @@
 		display: inline-block;
 		font-family: "Radley", serif;
 		margin: 0 0 .5% 0;
+	}
+	#day_2
+	{
+		margin: 0 0 3% 0;
+		font-size: 1em;
 	}
 	.locale
 	{
