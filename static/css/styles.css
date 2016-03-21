@@ -85,10 +85,22 @@
 		margin: .5%;
 		text-decoration: none;
 		color: grey;
+		visibility: hidden;
 	}
 	.title:hover
 	{
 		color: #c2d6d6;
+	}
+	#title_ul
+	{
+		height: 0px;
+	}
+	#menu
+	{
+		width: 7.5%;
+		border: none;
+		margin-left: 48%;
+		margin-bottom: 5%;
 	}
 	a
 	{
@@ -161,6 +173,11 @@
 	#top_banner
 	{
 		width: 100%;
+	}
+	#menu_div
+	{
+		width:80%;
+		margin: auto;
 	}
 	
 	#img_div
@@ -563,6 +580,17 @@
 		margin: 0 .75% 0 .75%;
 		text-decoration: none;
 		color: grey;
+		visibility: visible;
+	}
+	#menu
+	{
+		visibility: hidden;
+		height: 0px;
+
+	}
+	#title_ul
+	{
+		height: 100%;
 	}
 	.title:hover
 	{
@@ -697,6 +725,7 @@
 		margin: 0 2.5% 0 2.5%;
 		text-decoration: none;
 		color: grey;
+		visibility: visible;
 	}
 	#come
 	{
