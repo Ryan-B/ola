@@ -97,10 +97,13 @@
 	}
 	#menu
 	{
-		width: 7.5%;
+		width: 15%;
 		border: none;
-		margin-left: 48%;
-		margin-bottom: 5%;
+		/*margin-bottom: 20%;*/
+	}
+	#menu_ul
+	{
+		margin-bottom: 10%;
 	}
 	a
 	{
@@ -592,6 +595,13 @@
 	{
 		visibility: hidden;
 	}
+	#menu_ul
+	{
+		visibility: hidden;
+		height: 0px;
+		margin-bottom: 0;
+		padding: 0;
+	}
 	#title_ul
 	{
 		height: 100%;
@@ -721,12 +731,12 @@
 	}
 	.title
 	{
-		font-size: 1.25em;
+		font-size: 1.15em;
 		font-family: 'Radley', serif;
    		font-weight: 100;
 		display: inline;
 		vertical-align: top;
-		margin: 0 2.5% 0 2.5%;
+		margin: 0 2% 0 2%;
 		text-decoration: none;
 		color: grey;
 		visibility: visible;
@@ -836,6 +846,14 @@
 		margin: 0 0 .5% 0;
 		font-size: 2em;
 	}
+	.event_p
+	{
+		display: inline-block;
+		font-family: "Radley", serif;
+		margin: 0 0 3% 0;
+		font-size: 2em;
+		border-bottom: 1px solid black;
+	}
 	.locale
 	{
 		color: black;
@@ -862,6 +880,10 @@
 		font-size: 1.5em;
 		text-align: center;
 	}
+	.day_plan
+	{
+		width: 60.7%;
+	}
 	#last_day
 	{
 		margin-bottom: 10%;
@@ -869,7 +891,7 @@
 	#day_2
 	{
 		font-size: 1.75em;
-		padding-bottom: 3%;
+		
 	}
 	.day_h2
 	{
@@ -897,6 +919,10 @@
 	#title_ul
 	{
 		height: 100%;
+	}
+	#menu_ul
+	{
+		margin-bottom: 0;
 	}
 
 
