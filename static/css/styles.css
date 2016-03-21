@@ -77,12 +77,12 @@
 	}
 	.title
 	{
-		font-size: .6em;
+		font-size: .2em;
 		font-family: 'Radley', serif;
    		font-weight: 100;
 		display: inline;
 		vertical-align: top;
-		margin: .55%;
+		margin: .1%;
 		text-decoration: none;
 		color: grey;
 	}
