@@ -22,20 +22,20 @@
 	{
 		height: 100%;
 		width: 100%;
-		background-color: #fffff0;
+		background-color: white;
 		
 	}
 	#top_banner
 	{
 		width: 100%;
-		background-color: #fffff0;
+		background-color: white;
 	}
 	#main_div
 	{
 		height: 100%;
 		width: 100%;
 		margin: auto;
-		background-color: #fffff0;
+		background-color: white;
 		
 	}
 	#main_div_frontpage
@@ -43,7 +43,7 @@
 		height: 100%;
 		width: 80%;
 		margin: auto;
-		background-color: #fffff0;
+		background-color: white;
 		
 	}
 	#top_banner > ul > li
@@ -326,7 +326,6 @@
 	{
 		margin-bottom: 10%;
 		margin-top: 10%;
-		color: darkblue;
 		font-size: 80%;
 	}
 	#date_2
@@ -698,16 +697,16 @@
 @media screen and (min-width: 1024px){
 	body
 	{
-		margin: 0% 10% 0 10%;
-		background-color: black;
+		margin: 7.5% 15% 7.5% 15%;
+		background-color: #f2f2f2;
 	}
     #ola_font
 	{
 		font-family: 'Radley', serif;
 		text-align: center;
-		font-size: 5em;
+		font-size: 4em;
 		margin-bottom: 1.5%;
-		margin-top: 3%;
+		margin-top: 10%;
 		display: inline-block;
 		font-weight: 100;
 		text-shadow: 0px 2px 1px rgba(255,255,255,0.7), 0px -2px 1px rgba(0,0,0,0.5), 0px -1px 1px rgba(0,0,0,0.5);
@@ -731,7 +730,7 @@
 	}
 	.title
 	{
-		font-size: 1.15em;
+		font-size: .85em;
 		font-family: 'Radley', serif;
    		font-weight: 100;
 		display: inline;
@@ -741,33 +740,62 @@
 		color: grey;
 		visibility: visible;
 	}
+	#new_div
+	{
+		width: 100%;
+		margin: auto;
+
+	}
+	#front_pic
+	{
+		width: 100%;
+		border: none;
+	}
 	#come
 	{
 		text-align: center;
 		font-family: 'Radley', serif;
-		font-size: 1.5em;
-		margin-bottom: 3%;
+		font-size: 1em;
+		margin-top: 10%;
 		font-weight: 100;
 	}
 	.names
 	{
-		font-size: 3em;
+		font-size: 1.5em;
+		font-weight: 400;
+		width: 75%;
 	}
 	.names1
 	{
-		font-size: 3em;
+		font-size: 1.5em;
+		font-weight: 400;
+		width: 75%;
 	}
 	#and
 	{
-		font-size: 2em;
+		font-size: 1em;
 	}
 	#date_2
 	{
-		font-size: 1.5em;
+		font-size: 1em;
+		font-weight: 100;
 	}
 	#bottom_message
 	{
-		font-size: 2em;
+		font-size: 1em;
+	}
+	#vogel
+	{
+		font-size: 1em;
+		text-align: center;
+		border-top: 2px solid grey;
+		display: block;
+		font-family: "Times New Roman";
+		width: 80%;
+		margin: auto;
+		margin-bottom: 5%;
+		padding-top: 3%;
+		color: darkslateblue;
 	}
 	#img_div
 	{
