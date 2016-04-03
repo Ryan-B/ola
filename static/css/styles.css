@@ -78,7 +78,7 @@
 	.title
 	{
 		font-size: .5em;
-		font-family: 'Radley', serif;
+		font-family: 'Montserrat', sans-serif;
    		font-weight: 100;
 		display: inline;
 		vertical-align: top;
@@ -746,7 +746,7 @@
 	.title
 	{
 		font-size: .85em;
-		font-family: 'Radley', serif;
+		font-family: 'Montserrat', sans-serif;
    		font-weight: 100;
 		display: inline;
 		vertical-align: top;
@@ -805,7 +805,7 @@
 		text-align: center;
 		border-top: 2px solid grey;
 		display: block;
-		font-family: "Times New Roman";
+		font-family: 'Audiowide', cursive;
 		width: 80%;
 		margin: auto;
 		margin-bottom: 5%;
@@ -817,10 +817,11 @@
 		width: 25%;
 		margin: auto;
 		margin-bottom: 5%;
+		margin-top: 5%;
 	}
 	#our_story
 	{
-		width: 60.7%;
+		width: 90%;
 		margin-bottom: 10%;
 	}
 	#our_h2
@@ -830,6 +831,8 @@
 	#our_p
 	{
 		font-size: 1.5em;
+		font-family: 'Indie Flower', cursive;
+		margin: 0 20% 0 20%;
 	}
 	#hotel_div
 	{
