@@ -801,11 +801,11 @@
 	}
 	#vogel
 	{
-		font-size: 1em;
+		font-size: 1.5em;
 		text-align: center;
 		border-top: 2px solid grey;
 		display: block;
-		font-family: 'Audiowide', cursive;
+		font-family: 'Trade Winds', cursive;
 		width: 80%;
 		margin: auto;
 		margin-bottom: 5%;
