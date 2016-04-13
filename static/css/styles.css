@@ -585,7 +585,7 @@
 	}
 	#input_email
 	{
-		width: 100%;
+		width: 90%;
 		height: 100%;
 		border: 1px solid grey;
 		background-color: lightgrey;
@@ -603,7 +603,7 @@
   	}
   		#input_name
 	{
-		width: 48%;
+		width: 45%;
 		height: 100%;
 		border: 1px solid grey;
 		background-color: lightgrey;
