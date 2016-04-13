@@ -623,6 +623,17 @@
   		font-family: "Radley", serif;
   		font-size: 3em;
   	}
+  	#radio
+  	{
+  		text-align: center;
+  		margin: auto;
+  	}
+  	#rsvp_form
+	{
+		margin-bottom: 5%;
+		margin: auto;
+		text-align: center;
+	}
 }
 	
 @media screen and (min-width: 481px){
