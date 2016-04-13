@@ -433,7 +433,7 @@
 		font-family: "Radley", serif;
 	}
 	.event
-
+	{
 		display: inline-block;
 		font-family: "Radley", serif;
 		margin: 0 0 .5% 0;
@@ -590,7 +590,7 @@
 		border: 1px solid grey;
 		background-color: lightgrey;
 		border-radius: 10px;
-		font-size: 4em;
+		font-size: 5em;
 		margin-bottom: 3%;
 
 	}
@@ -608,7 +608,7 @@
 		border: 1px solid grey;
 		background-color: lightgrey;
 		border-radius: 10px;
-		font-size: 4em;
+		font-size: 5em;
 		margin-bottom: 3%;
 	}
 	#input_name::-webkit-input-placeholder 
