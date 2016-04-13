@@ -222,8 +222,14 @@
 	}
 	#our_h2
 	{
-		font-size: 2em;
+		font-size: 5em;
 		color: grey;
+	}
+	#our_p
+	{
+		font-size: 3em;
+		color: grey;
+		margin: 0 5% 0 5%;
 	}
 	.day_h4
 	{
