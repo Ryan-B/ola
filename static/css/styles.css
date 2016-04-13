@@ -432,6 +432,12 @@
 		color: black;
 		font-family: "Radley", serif;
 	}
+	.event
+
+		display: inline-block;
+		font-family: "Radley", serif;
+		margin: 0 0 .5% 0;
+	}
 	#day_2
 	{
 		margin: 0 0 3% 0;
@@ -616,38 +622,6 @@
   	{
   		font-family: "Radley", serif;
   		font-size: 3em;
-  	}
-  	#radio
-  	{
-  		text-align: center;
-  		margin: auto;
-  	}
-  	#rsvp_form
-	{
-		margin-bottom: 5%;
-		margin: auto;
-		text-align: center;
-	}
-	#rsvp
-  	{
-  		
-  		
-  		font-size: 3em;
-  		color: white;
-  		background-color: black;
-  		border-radius: 10px;
-  		margin: 3% 0 20% 0;
-  		font-family: "Radley", serif;
-
-  	}
-  	#guest
-  	{		
-  		font-size: 3em;
-  		color: white;
-  		background-color: black;
-  		border-radius: 10px;
-  		margin: 3% 0 3% 0;
-  		font-family: "Radley", serif;
   	}
 }
 	
