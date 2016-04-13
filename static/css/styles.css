@@ -360,7 +360,7 @@
 		text-align: center;
 		border-top: 2px solid grey;
 		display: block;
-		font-family: "Audiowide";
+		font-family: "Michroma";
 		width: 80%;
 		margin: auto;
 		margin-bottom: 5%;
@@ -909,6 +909,20 @@
 		width: 80%;
 		margin-bottom: 10%;
 	}
+	#hotel_li
+	{
+		display: inline;
+		font-family: "Radley", serif;
+		margin: 1.5%;
+		font-size: 1em;
+	}
+	#no
+	{
+		text-align: center;
+		font-family: "Radley", serif;
+		font-size: 1em;
+		margin-bottom: 2%;
+	}
 	.hotel_p
 	{
 		font-size: 1.25em;
@@ -1023,6 +1037,20 @@
 		font-family: "Radley", serif;
 		margin: 0 0 2% 0;
 		font-size: 1.5em;
+	}
+	.day_h4
+	{
+		text-align: center;
+		font-family: "Radley", serif;
+		margin: 0 0 2% 0;
+		font-size: 1.5em;
+	}
+	.day_ps
+	{
+		text-align: center;
+		font-family: "Radley", serif;
+		margin: 0 0 2% 0;
+		font-size: 1em;
 	}
 	#menu_div
 	{
