@@ -289,6 +289,14 @@
 		margin: 0;
 		padding: 0;
 	}
+	#locale
+	{
+		font-size: 2.5em;
+	}
+	#address
+	{
+		font-size: 2.5em;
+	}
 	.day_h2
 	{
 		text-align: center;
