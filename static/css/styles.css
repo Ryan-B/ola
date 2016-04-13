@@ -219,7 +219,7 @@
 	}
 	#our_h2
 	{
-		font-size: 5em;
+		font-size: 4em;
 		color: grey;
 	}
 	#our_p
@@ -474,7 +474,7 @@
 		text-align: center;
 		font-family: "Radley", serif;
 		margin-bottom: 2%;
-		font-size: 2em;
+		font-size: 3em;
 	}
 	#final_p
 	{
@@ -485,7 +485,7 @@
 		display: inline;
 		font-family: "Radley", serif;
 		margin: 1.5%;
-		font-size: 2em;
+		font-size: 3em;
 	}
 	#hotel_ul
 	{
