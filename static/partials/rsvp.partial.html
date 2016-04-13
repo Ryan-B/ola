@@ -2,172 +2,38 @@
 	<div id="main_div">
 		
 		<div class="register" ng-controller="ProductsController as productsCtrl">
-			<h3>Please Register to RSVP</h3>
-			<form>
-				
-				<input id="input_name" ng-model="productsCtrl.newProduct.last_name" type="text" name="name" placeholder="  Last Name">
+			<h3 id="our_h2">Please Register to RSVP</h3>
+			<form id="rsvp_form">				
+			  <input id="input_name" ng-model="productsCtrl.newProduct.last_name" type="text" name="name" placeholder="  Last Name">
 				<input id="input_name" ng-model="productsCtrl.newProduct.first_name" type="text" name="name" placeholder="  First Name"><br>
 				<input id="radio" type="radio" name="attending" value="yes" ng-model="productsCtrl.newProduct.attending"><label> I'll be there! </label><br> 
-			    <input type="radio" name="attending" value="no" ng-model="productsCtrl.newProduct.attending"><label> I can't make it!</label><br>
+			  <input type="radio" name="attending" value="no" ng-model="productsCtrl.newProduct.attending"><label> I can't make it!</label><br>
 			    <!-- <button id="rsvp" type="submit">Submit</button><br> -->
 				<input id="input_email" ng-model="productsCtrl.newProduct.email" type="email" name="email" placeholder="  Email Address"><br>
 				<!-- <input id="vegan" type="radio" name="vegan" value="vegan" ng-model="productsCtrl.newProduct.vegan"><label> Vegetarian/Vegan?</label><br> -->
 				<input id="input_email" ng-model="productsCtrl.newProduct.song" type="text" name="song" placeholder="  Song Request  (artist, title)"><br>
 				<input id="input_email" ng-model="productsCtrl.newProduct.fact" type="text" name="fact" placeholder="  An interesting fact about you!"><br>
-				<button id="guest" type="submit">+ Add Guest</button> <button id="rsvp" type="submit" ng-click="productsCtrl.addProduct(productsCtrl.newProduct)"> RSVP </button><br>
-				
-
+				<button id="guest" type="submit">+ Add Guest</button> 
+        <button id="rsvp" type="submit" ng-click="productsCtrl.addProduct(productsCtrl.newProduct)"> RSVP </button><br>
 			</form>
 		</div>
-		<div id="rsvp_info" ng-repeat="product in productsCtrl.products">
-			<h5>Name:</h5><p class="rsvp_name" ng-bind="product.first_name"></p>
+		<!-- <div id="rsvp_info" ng-repeat="product in productsCtrl.products">
+			<h5 id="rsvp5">Name:</h5><p class="rsvp_name" ng-bind="product.first_name"></p>
 					 </h5><p class="rsvp_name" ng-bind="product.last_name"></p>
-			<h5>Attending?</h5><p ng-bind="product.attending"></p>
-			<h5>Song:</h5><p ng-bind="product.song"></p>
-			<h5>Email:</h5><p ng-bind="product.email"></p>
-			<h5>Interesting Fact:</h5><p ng-bind="product.fact"></p>
+			<h5 id="rsvp5">Attending?</h5><p ng-bind="product.attending"></p>
+			<h5 id="rsvp5">Song:</h5><p ng-bind="product.song"></p>
+			<h5 id="rsvp5">Email:</h5><p ng-bind="product.email"></p>
+			<h5 id="rsvp5">Interesting Fact:</h5><p ng-bind="product.fact"></p>
 			<button id="delete" ng-click="productsCtrl.removeProduct(product)">Remove</button>
 		</div>
-			<a href="#/hidden"><div id="hidden"></div></a>
+			<a href="#/hidden"><div id="hidden"></div></a> -->
 	</div>
 
 <style type="text/css">
 	
 	
 	
-	form
-	{
-		margin-bottom: 5%;
-		margin: auto;
-		text-align: center;
-	}
-	.register
-	{
-		width: 80%;
-		margin: auto;
-	}
-	#input_email
-	{
-		width: 100%;
-		height: 100%;
-		border: 1px solid grey;
-		background-color: lightgrey;
-		border-radius: 10px;
-		font-size: 2em;
-		margin-bottom: 3%;
-
-	}
-	#input_email::-webkit-input-placeholder 
-	{ 
-  		color: white;
-  		margin-left: 3%;
-  		vertical-align: top;
-  		font-family: "Radley", serif;
-  	}
-  	#input_email:hover
-  	{
-		background-color: grey;
-  	}
-  	#input_name
-	{
-		width: 48%;
-		height: 100%;
-		border: 1px solid grey;
-		background-color: lightgrey;
-		border-radius: 10px;
-		font-size: 2em;
-		margin-bottom: 3%;
-
-
-	}
-	#input_name::-webkit-input-placeholder 
-	{ 
-  		color: white;
-  		margin-left: 3%;
-  		vertical-align: top;
-  		font-family: "Radley", serif;
-
-  	}
-  	#input_name:hover
-  	{
-  		background-color: grey;
-  	}
-  	#input_how
-	{
-		width: 5%;
-		height: 100%;
-		border: 1px solid grey;
-		background-color: lightgrey;
-		border-radius: 10px;
-		font-size: 2em;
-		margin-bottom: 3%;
-
-	}
-	#input_how::-webkit-input-placeholder 
-	{ 
-  		color: white;
-  		margin-left: 3%;
-  		vertical-align: top;
-  	}
-  	#input_how:hover
-  	{
-  		background-color: grey;
-  	}
-  	textarea
-  	{
-  		width: 100%;
-  		height: 100%;
-  		border-radius: 10px;
-  		background-color: lightgrey;
-  		font-size: 2em;
-  	}
-  	textarea::-webkit-input-placeholder 
-	{ 
-  		color: white;
-
-  		
-  		/*vertical-align: top;*/
-  	}
-  	textarea:hover
-  	{
-  		background-color: grey;
-  	}
-  	#rsvp
-  	{
-  		
-  		
-  		font-size: 1.5em;
-  		color: white;
-  		background-color: black;
-  		border-radius: 10px;
-  		margin: 3% 0 3% 0;
-  		font-family: "Radley", serif;
-
-  	}
-  	#rsvp:hover
-  	{
-  		
-  		font-size: 1.5em;
-  		color: white;
-  		background-color: grey;
-  		border-radius: 10px;
-  	}
-  	#guest
-  	{
-  		
-  		
-  		font-size: 1.5em;
-  		color: white;
-  		background-color: black;
-  		border-radius: 10px;
-  		margin: 3% 0 3% 0;
-  		font-family: "Radley", serif;
-
-  	}
-  	#guest:hover
-  	{
-  		background-color: grey;
-  	}
+	
   	#rsvp_div
   	{
   		width: 100%;
