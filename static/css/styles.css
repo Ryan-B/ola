@@ -564,6 +564,11 @@
 	{
 		margin: 1% 0 3% 0;
 	}
+	#explore_h3
+	{
+		font-size: 3em; 
+
+	}
 	#explore_li 
 	{
 		display: inline-block;
@@ -571,7 +576,7 @@
 		color: dodgerblue;
 		font-family: "Radley", serif;
 		
-		font-size: 100%;
+		font-size: 2.5em;
 		
 	}
 	#explore_li:hover
