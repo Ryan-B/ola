@@ -220,6 +220,11 @@
 		text-align: center;
 		font-family: "Radley", serif;
 	}
+	#our_h2
+	{
+		font-size: 2em;
+		color: grey;
+	}
 	.day_h4
 	{
 		text-align: center;
