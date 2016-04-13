@@ -228,7 +228,7 @@
 	#our_p
 	{
 		font-size: 3em;
-		color: grey;
+		color: black;
 		margin: 0 5% 0 5%;
 	}
 	.day_h4
@@ -279,7 +279,13 @@
 	}
 	.event_p
 	{
-		font-size: 1em;
+		font-size: 3em;
+		margin: 0;
+		padding: 0;
+	}
+	.event
+	{
+		font-size: 3em;
 		margin: 0;
 		padding: 0;
 	}
