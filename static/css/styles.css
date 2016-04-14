@@ -623,6 +623,21 @@
   		font-family: "Radley", serif;
   		font-size: 3em;
   	}
+  	 #maps2{
+      width: 80%;
+      height: 100%;
+      margin: auto;
+      padding: 0;
+      margin-top: 5%;
+    }
+    #map {
+      height: 360px;
+      /*width: 28%;*/
+      margin-bottom: 10%;
+      margin-top: 3%;
+      margin-left: 1%;
+      /*border: 1px solid black;*/
+    }
 }
 	
 @media screen and (min-width: 481px){
@@ -1204,5 +1219,18 @@
   		font-family: "Radley", serif;
   		font-size: 1.5em;
   	}
+  	#maps2{
+      width: 100vh;
+      height: 100vh;
+      margin: auto;
+      padding: 0;
+    }
+    #map {
+      height: 90%;
+      width: 80%;
+      margin: auto;
+      margin-bottom: 10%;
+      border: 1px solid black;
+    }
 
 }

@@ -9,7 +9,7 @@ app.directive('directionsMap', function(){
 
       console.log(mapEl);
 
-      var myLatLng = {lat: 47.6418836, lng: -122.377581};
+      var myLatLng = {lat: 47.646282, lng: -122.340104 };
       var ola = {lat: 47.700543, lng:  -122.359262};
       var discovery = {lat: 47.657916, lng: -122.412387};
       var gasworks = {lat: 47.646421, lng: -122.335024};
