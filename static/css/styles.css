@@ -220,12 +220,12 @@
 	#our_h2
 	{
 		font-size: 4em;
-		color: grey;
+		color: black;
 	}
 	#our_p
 	{
 		font-size: 3em;
-		color: black;
+		color: grey;
 		margin: 0 5% 0 5%;
 	}
 	.day_h4
@@ -842,7 +842,7 @@
 	}
 	#new_div
 	{
-		width: 100%;
+		width: 80%;
 		margin: auto;
 
 	}
@@ -910,14 +910,14 @@
 	}
 	#our_h2
 	{
-		font-size: 2em;
-		color: grey;
+		font-size: 3em;
+		color: black;
 	}
 	#our_p
 	{
-		font-size: 1.5em;
+		font-size: 1em;
 		font-family: 'Radley', cursive;
-		margin: 0 20% 0 20%;
+		margin: 0 25% 0 25%;
 	}
 	#hotel_div
 	{
@@ -1231,6 +1231,11 @@
       margin: auto;
       margin-bottom: 10%;
       border: 1px solid black;
+    }
+    #img_div3
+    {
+    	width: 50%;
+    	margin: auto;
     }
 
 }

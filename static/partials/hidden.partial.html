@@ -8,6 +8,15 @@
 			<button id="delete" ng-click="productsCtrl.removeProduct(product)">Remove</button>
 </div>
 
+<div id="rsvp_info" ng-repeat="product in productsCtrl.products">
+      <h5 id="rsvp5">Name:</h5><p class="rsvp_name" ng-bind="product.first_name"></p>
+           </h5><p class="rsvp_name" ng-bind="product.last_name"></p>
+      <h5 id="rsvp5">Attending?</h5><p ng-bind="product.attending"></p>
+      <h5 id="rsvp5">Song:</h5><p ng-bind="product.song"></p>
+      <h5 id="rsvp5">Email:</h5><p ng-bind="product.email"></p>
+      <h5 id="rsvp5">Interesting Fact:</h5><p ng-bind="product.fact"></p>
+      <button id="delete" ng-click="productsCtrl.removeProduct(product)">Remove</button>
+    </div>
 
 
 <style type="text/css">
