@@ -2,10 +2,10 @@ app.controller('MainController', function(){
 	console.log("MainController");
 })
 
-app.controller('MapsController', function(){
-	console.log("MapsController loaded");
+// app.controller('MapsController', function(){
+// 	console.log("MapsController loaded");
 
-})
+// })
 
 
 app.controller('HomeController', function($interval, $scope) {
