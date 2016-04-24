@@ -905,7 +905,7 @@
 	}
 	#img_div
 	{
-		width: 25%;
+		width: 33%;
 		margin: auto;
 		margin-bottom: 5%;
 		margin-top: 2%;
@@ -917,7 +917,7 @@
 	}
 	#our_h2
 	{
-		font-size: 3em;
+		font-size: 2.5em;
 		color: black;
 	}
 	#our_p
@@ -1050,7 +1050,7 @@
 		text-align: center;
 		font-family: "Radley", serif;
 		margin: 0 0 2% 0;
-		font-size: 2em;
+		font-size: 2.5em;
 		color: grey;
 	}
 	.day_h3
