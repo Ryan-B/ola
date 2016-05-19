@@ -23,10 +23,10 @@ app.config(function($routeProvider){
 		controllerAs: 'productsCtrl',
 		templateUrl: '/partials/hotels2.partial.html'
 	})
-	.when('/map1', {
+	.when('/maps2', {
 		controller: 'ProductsController',
 		controllerAs: 'productsCtrl',
-		templateUrl: '/partials/map1.partial.html'
+		templateUrl: '/partials/maps2.partial.html'
 	})
 	
 	.when('/rsvp', {
