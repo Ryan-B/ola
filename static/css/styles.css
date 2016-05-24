@@ -241,6 +241,25 @@
 		color: grey;
 		margin: 0 5% 0 5%;
 	}
+	#yes_btn
+    {
+    	font-size: 30pt;
+    	background-color: green;
+    	border-radius: 10%;
+    	margin-right: 8px;
+    	font-family: "Radley", serif;
+
+    }
+    #no_btn
+    {
+    	font-size: 30pt;
+    	background-color: red;
+    	border-radius: 10%;
+    	padding-left: 10px;
+    	padding-right: 10px;
+    	font-family: "Radley", serif;
+    	
+    }
 	.day_h4
 	{
 		text-align: center;
@@ -446,7 +465,7 @@
 		font-family: "Radley", serif;
 	}
 	.event
-
+	{
 		display: inline-block;
 		font-family: "Radley", serif;
 		margin: 0 0 .5% 0;
@@ -1258,15 +1277,7 @@
     	/*border: 1px solid black;*/
     	margin-bottom: 5%;
     }
-    #yes_btn
-    {
-    	font-size: 30pt;
-    	background-color: green;
-    	border-radius: 10%;
-    	margin-right: 8px;
-    	font-family: "Radley", serif;
-
-    }
+    
     #yes_btn:hover
     {
     	font-size: 30pt;
