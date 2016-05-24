@@ -237,7 +237,7 @@
 	}
 	#our_p2
 	{
-		font-size: 3em;
+		font-size: 2em;
 		color: grey;
 		margin: 0 5% 0 5%;
 	}
@@ -246,9 +246,13 @@
     	font-size: 50pt;
     	background-color: green;
     	border-radius: 10%;
-    	margin-right: 8px;
     	font-family: "Radley", serif;
 
+    }
+    #yes_btn:hover
+    {
+    	background-color: darkgreen;
+    	color: white;
     }
     #no_btn
     {
@@ -260,9 +264,14 @@
     	font-family: "Radley", serif;
     	
     }
+    #no_btn:hover
+    {
+    	background-color: darkred;
+    	color: white;
+    }
     #yes-no
     {
-    	width: 400px;
+    	/*width: 400px;*/
     	margin: auto;
     	/*border: 1px solid black;*/
     	margin-bottom: 40%;
@@ -1279,12 +1288,20 @@
     }
     #yes-no
     {
-    	width: 200px;
+    	/*width: 200px;*/
     	margin: auto;
+    	display: inline-block;
     	/*border: 1px solid black;*/
     	margin-bottom: 5%;
     }
-    
+    #yes_btn
+    {
+    	font-size: 30pt;
+    	background-color: green;
+    	border-radius: 10%;
+    	font-family: "Radley", serif;
+    	
+    }
     #yes_btn:hover
     {
     	font-size: 30pt;
@@ -1313,5 +1330,30 @@
 
     	
     }
+    #rsvp_border
+    {
+    	margin-bottom: 10%;
+    }
+	#our_p2
+	{
+		font-size: 1.5em;
+		color: black;
+		margin: 1% 0 5% 0;
+	}
+	#rsvp_ul
+	{
+		margin: 1% 0 5% 0;
+	}
+	#redd
+	{
+		color: red;
+	}
+	
+	#greenn
+	{
+		color: green;
+	}
+	
+	
 
 }
