@@ -250,16 +250,6 @@
     	font-family: "Radley", serif;
 
     }
-    #no_btn
-    {
-    	font-size: 30pt;
-    	background-color: red;
-    	border-radius: 10%;
-    	padding-left: 10px;
-    	padding-right: 10px;
-    	font-family: "Radley", serif;
-    	
-    }
 	.day_h4
 	{
 		text-align: center;
@@ -465,7 +455,7 @@
 		font-family: "Radley", serif;
 	}
 	.event
-	{
+	
 		display: inline-block;
 		font-family: "Radley", serif;
 		margin: 0 0 .5% 0;
