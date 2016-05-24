@@ -1126,7 +1126,7 @@
   	}
   	#input_name
 	{
-		width: 48%;
+		width: 49.255%;
 		height: 100%;
 		border: 1px solid grey;
 		background-color: lightgrey;
@@ -1244,6 +1244,50 @@
     	width: 50%;
     	margin: auto;
     	margin-bottom: 5%;
+    }
+    #yes-no
+    {
+    	width: 200px;
+    	margin: auto;
+    	/*border: 1px solid black;*/
+    	margin-bottom: 5%;
+    }
+    #yes_btn
+    {
+    	font-size: 30pt;
+    	background-color: green;
+    	border-radius: 10%;
+    	margin-right: 8px;
+    	font-family: "Radley", serif;
+
+    }
+    #yes_btn:hover
+    {
+    	font-size: 30pt;
+    	background-color: darkgreen;
+    	color: white;
+
+    }
+    #no_btn
+    {
+    	font-size: 30pt;
+    	background-color: red;
+    	border-radius: 10%;
+    	padding-left: 10px;
+    	padding-right: 10px;
+    	font-family: "Radley", serif;
+    	
+    }
+    #no_btn:hover
+    {
+    	font-size: 30pt;
+    	background-color: darkred;
+    	border-radius: 10%;
+    	padding-left: 10px;
+    	padding-right: 10px;
+    	color: white;
+
+    	
     }
 
 }

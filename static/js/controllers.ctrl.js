@@ -75,3 +75,41 @@ app.controller('ProductsController', function(ProductsFactory){
 		})
 	}
 })
+
+app.controller('DeclinesController', function(DeclinesFactory){
+	console.log("DeclinesController Loaded");
+	var _this = this;
+	
+	var getDeclines = function(){
+		console.log("DeclinesController getDeclines");
+		
+		DeclinesFactory.getDeclines(function(declines){
+			console.log(this);
+			console.log(declines);
+			_this.declines = declines;
+		});
+	}
+	this.addDecline = function(newDecline){
+		console.log("Clicked", newDecline);
+		if(newDecline){
+			DeclinesFactory.addDecline(newDecline, function(){
+				getDeclines();
+				_this.newDecline = {};
+			})
+		}
+	}
+	getDeclines();
+
+	this.removeDecline = function(decline){
+		console.log("removeDecline", decline);
+		DeclinesFactory.removeDecline(decline, function(){
+			getDeclines();
+		})
+	}
+	this.updateDecline = function(decline){
+		console.log("updateDecline", decline);
+		DeclinesFactory.updateDecline(decline, function(){
+			getDeclines();
+		})
+	}
+})

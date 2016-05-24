@@ -1,0 +1,21 @@
+<h3 id="our_h2">Why aren't you coming?</h3>
+    <p id="our_p2"><a href="#/rsvp">Wait, I meant Yes, I am attending!</a></p>
+      <div id="img_div" >
+        <img src="img/nofive.jpg">
+      </div>
+
+<div class="register" ng-controller="DeclinesController as declinesCtrl">
+      <form id="rsvp_form">				
+				<input id="input_email" ng-model="declinesCtrl.newDecline.email" type="email" name="email" placeholder="  Email Address"><br>
+        <input id="input_name" ng-model="declinesCtrl.newDecline.first_name" type="text" name="name" placeholder="  First Name">
+        <input id="input_name" ng-model="declinesCtrl.newDecline.last_name" type="text" name="name" placeholder="  Last Name">
+        <textarea id="input_email" ng-model="declinesCtrl.newDecline.message" type="text" name="name" placeholder="  Please Leave a Message to Lena and Ola..."></textarea><br>
+        <button id="rsvp" type="submit" ng-click="declinesCtrl.addDecline(declinesCtrl.newDecline)">Regrets</button><br>
+       </form>
+
+
+			<a href="#/hidden">Hidden</a>
+	
+<p id="vogel">Powered by Vogel1Devs</p>
+
+</div>

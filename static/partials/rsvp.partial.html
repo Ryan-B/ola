@@ -1,20 +1,26 @@
 
 	<div id="main_div">
 		
+      <h3 id="our_h2">We are so happy you are coming!</h3>
+      <p id="our_p2"><a href="#/rsvp_no">Oops, I meant No, I cannot attend</a></p>
+      <div id="img_div" >
+        <img src="img/hifive.jpg">
+      </div>
 		<div class="register" ng-controller="ProductsController as productsCtrl">
-			<h3 id="our_h2">Please Register to RSVP</h3>
 			<form id="rsvp_form">				
-			  <input id="input_name" ng-model="productsCtrl.newProduct.last_name" type="text" name="name" placeholder="  Last Name">
-				<input id="input_name" ng-model="productsCtrl.newProduct.first_name" type="text" name="name" placeholder="  First Name"><br>
-				<input id="radio" type="radio" name="attending" value="yes" ng-model="productsCtrl.newProduct.attending"><label> I'll be there! </label><br> 
-			  <input type="radio" name="attending" value="no" ng-model="productsCtrl.newProduct.attending"><label> I can't make it!</label><br>
-			   
-				<input id="input_email" ng-model="productsCtrl.newProduct.email" type="email" name="email" placeholder="  Email Address"><br>
-				
+				<input id="input_email" ng-model="productsCtrl.newProduct.email" type="email" name="email" placeholder="  Email Address (required)"><br>
+        <input id="input_name" ng-model="productsCtrl.newProduct.first_name" type="text" name="name" placeholder="  First Name (required)">
+        <input id="input_name" ng-model="productsCtrl.newProduct.last_name" type="text" name="name" placeholder="  Last Name (required)">
+         
+				<input id="input_email" ng-model="productsCtrl.newProduct.diet" type="text" name="diet" placeholder="  Food Allergies and/or Vegetarian/Vegan preferences"><br>
 				<input id="input_email" ng-model="productsCtrl.newProduct.song" type="text" name="song" placeholder="  Song Request  (artist, title)"><br>
-				<input id="input_email" ng-model="productsCtrl.newProduct.fact" type="text" name="fact" placeholder="  An interesting fact about you!"><br>
-				<button id="guest" type="submit">+ Add Guest</button> 
-        <button id="rsvp" type="submit" ng-click="productsCtrl.addProduct(productsCtrl.newProduct)"> RSVP </button><br>
+				<input id="input_email" ng-model="productsCtrl.newProduct.fact" type="text" name="fact" placeholder="  An interesting fact about you! (required)"><br>
+
+        <h3 id="our_p2">If you are bringing a guest, please fill out this additional form</h3>
+				<input id="input_email" ng-model="productsCtrl.newProduct.guest" type="text" name="name" placeholder="  Guest Name">
+        <input id="input_email" ng-model="productsCtrl.newProduct.diet_guest" type="text" name="diet" placeholder="   Food allergies and/or Vegetarian/Vegan preferences"><br>
+        <input id="input_email" ng-model="productsCtrl.newProduct.fact_guest" type="text" name="fact" placeholder="  An interesting fact about your guest!"><br>
+        <button id="rsvp" type="submit" ng-click="productsCtrl.addProduct(productsCtrl.newProduct)">RSVP</button><br>
 			</form>
 		</div>
 
@@ -24,61 +30,6 @@
 </div>
 		
 
-			<!-- <a href="#/hidden">Hidden</a> -->
+			<a href="#/hidden">Hidden</a>
 	
 <p id="vogel">Powered by Vogel1Devs</p>
-<style type="text/css">
-	
-	
-	
-	
-  	/*#rsvp_div
-  	{
-  		width: 100%;
-  		text-align: center;
-  		margin: auto;
-  		margin-bottom: 33%;
-  	}
-  	.rsvp_name
-  	{
-  		display: inline;
-  	}
-  	#rsvp_info
-  	{
-  		display: inline-block;
-  		border: 1px solid darkgrey;
-  		margin: 2.5%;
-  		padding: 5%;
-  	}
-  	#delete
-  	{
-  		border-radius: 100px;
-  		background-color: purple;
-  		color: white;
-  	}
-  	#hidden
-  	{
-  		width: 100%;
-  		height: 50px;
-  	}
-  	label
-  	{
-  		font-family: "Radley", serif;
-  		font-size: 1.5em;
-  	}
-  	#vegan
-  	{
-  		margin-bottom: 3%;
-  	}
-  	#radio
-  	{
-  		margin-bottom: 3%;
-  	}
-  	h2
-  	{
-  		margin-bottom: 2%;
-  		text-align: center;
-  		font-family: "Radley", serif;
-  	}*/
-  	
-</style>

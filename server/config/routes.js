@@ -1,6 +1,7 @@
 // var mongoose = require('mongoose');
 // var users = require('../controllers/users.js');
 var products = require('../controllers/products.js');
+var declines = require('../controllers/declines.js');
 // var orders = require('../controllers/orders.js');
 module.exports = function(app) {
 
@@ -36,19 +37,20 @@ module.exports = function(app) {
 	.delete('/products/:id', function(request, response) {products.destroy(request, response) })
 	// Update
 	.patch('/products/:id', function(request, response) {products.update(request, response) })
-//Order
+//Declines
 	// Index
-	.get('/orders', function(request, response) {orders.index(request, response) })
+	.get('/declines', function(request, response) {declines.index(request, response) })
 	// New
-	// .get('/orders/new', function(request, response) {orders.create(request, response) })
-	// // Show
-	// .get('/orders/:id', function(request, response) {orders.show(request, response) })
-	// // Edit
-	// .get('/orders/:id/edit', function(request, response) {orders.edit(request, response) })
+	.get('/declines/new', function(request, response) {declines.create(request, response) })
+	// Show
+	.get('/declines/:id', function(request, response) {declines.show(request, response) })
+	// Edit
+	.get('/declines/:id/edit', function(request, response) {declines.edit(request, response) })
 	// Create
-	.post('/orders', function(request, response) {orders.create(request, response) })
+	.post('/declines', function(request, response) {declines.create(request, response) })
 	// Destroy
-	.delete('/orders/:id', function(request, response) {orders.destroy(request, response) })
+	.delete('/declines/:id', function(request, response) {declines.destroy(request, response) })
 	// Update
-	.patch('/orders/:id', function(request, response) {orders.update(request, response) })
+	.patch('/declines/:id', function(request, response) {declines.update(request, response) })
+
 }

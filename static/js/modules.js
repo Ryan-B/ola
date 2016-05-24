@@ -34,6 +34,16 @@ app.config(function($routeProvider){
 		controllerAs: 'productsCtrl',
 		templateUrl: '/partials/rsvp.partial.html'
 	})
+	.when('/rsvp1', {
+		controller: 'ProductsController',
+		controllerAs: 'productsCtrl',
+		templateUrl: '/partials/rsvp1.partial.html'
+	})
+	.when('/rsvp_no', {
+		controller: 'ProductsController',
+		controllerAs: 'productsCtrl',
+		templateUrl: '/partials/rsvp_no.partial.html'
+	})
 	.when('/registry', {
 		controller: 'ProductsController',
 		controllerAs: 'productsCtrl',

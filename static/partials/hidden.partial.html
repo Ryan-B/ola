@@ -1,29 +1,34 @@
-<div id="rsvp_info" ng-repeat="product in productsCtrl.products">
-			<h5>Name:</h5><p class="rsvp_name" ng-bind="product.first_name"></p>
-					 </h5><p class="rsvp_name" ng-bind="product.last_name"></p>
-			<h5>Attending?</h5><p ng-bind="product.attending"></p>
-			<h5>Who are you Bringing?</h5><p ng-bind="product.who_else"></p>
-			<h5>Email:</h5><p ng-bind="product.email"></p>
-			<h5>Message:</h5><p ng-bind="product.comment"></p>
-			<button id="delete" ng-click="productsCtrl.removeProduct(product)">Remove</button>
-</div>
 
+<h2 id="our_h2">These People are Coming!</h2>
 <div id="rsvp_info" ng-repeat="product in productsCtrl.products">
       <h5 id="rsvp5">Name:</h5><p class="rsvp_name" ng-bind="product.first_name"></p>
            </h5><p class="rsvp_name" ng-bind="product.last_name"></p>
-      <h5 id="rsvp5">Attending?</h5><p ng-bind="product.attending"></p>
-      <h5 id="rsvp5">Song:</h5><p ng-bind="product.song"></p>
       <h5 id="rsvp5">Email:</h5><p ng-bind="product.email"></p>
+      <h5 id="rsvp5">Song:</h5><p ng-bind="product.song"></p>
       <h5 id="rsvp5">Interesting Fact:</h5><p ng-bind="product.fact"></p>
+      <h5 id="rsvp5">Diet:</h5><p ng-bind="product.diet"></p>
+      <h5 id="rsvp5">Guest Name:</h5><p ng-bind="product.guest"></p>
+      <h5 id="rsvp5">Guest Diet:</h5><p ng-bind="product.diet_guest"></p>
+      <h5 id="rsvp5">Guest Fact:</h5><p ng-bind="product.fact_guest"></p>
       <button id="delete" ng-click="productsCtrl.removeProduct(product)">Remove</button>
     </div>
-
+<hr>
+  <h2 id="our_h2">These People are Not!</h2>
+  <div ng-controller="DeclinesController as declinesCtrl">
+    <div id="rsvp_info" ng-repeat="decline in declinesCtrl.declines">
+      <h5 id="rsvp5">Name:</h5><p class="rsvp_name" ng-bind="decline.first_name"></p>
+           </h5><p class="rsvp_name" ng-bind="decline.last_name"></p>
+      <h5 id="rsvp5">Email:</h5><p ng-bind="decline.email"></p>
+       <h5 id="rsvp5">Message:</h5><p ng-bind="decline.message"></p>
+      <button id="delete" ng-click="declinesCtrl.removeDecline(decline)">Remove</button>
+    </div>
+  </div>
 
 <style type="text/css">
 	
 	#rsvp_div
   	{
-  		width: 100%;
+  		width: 47%;
   		text-align: center;
   		margin: auto;
   		margin-bottom: 33%;
@@ -31,27 +36,30 @@
   	.rsvp_name
   	{
   		display: inline;
-  		color: grey;
-  		font-size: 2em;
+  		color: darkslateblue;
+  		font-size: 1.25em;
   	}
   	p
   	{
-  		color: purple;
+  		color: darkslateblue;
   		font-size: 1.25em;
+      text-align: left;
   	}
   	#rsvp_info
   	{
   		display: inline-block;
   		border: 1px solid darkgrey;
-  		margin: 1.5%;
-  		padding: 5%;
+  		padding: 1%;
+      width: 45%;
+      margin: 1%;
+      vertical-align: top;
   	}
   	#delete
   	{
   		border-radius: 100px;
   		background-color: purple;
   		color: white;
-  		margin-top: 20%;
+  		margin-top: 5%;
   	}
   	#delete:hover
   	{

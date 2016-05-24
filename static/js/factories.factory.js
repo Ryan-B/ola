@@ -20,3 +20,26 @@ app.factory('ProductsFactory', function($http){
 		}
 	}
 })
+
+app.factory('DeclinesFactory', function($http){
+	return {
+		getDeclines: function(callback){
+			console.log("DeclinesFactory getDeclines");
+			$http.get('/declines').success(function(response){
+				callback(response);
+			})
+		},
+		addDecline: function(newDecline, callback){
+			console.log("DeclinesFactory addDecline");
+			$http.post('/declines', newDecline).success(function(response){
+				callback();
+			})
+		},
+		removeDecline: function(decline, callback){
+			console.log("DeclinesFactory RemoveDecline", decline);
+			$http.delete('/declines/'+decline._id).success(function(response){
+				callback();
+			})
+		}
+	}
+})
