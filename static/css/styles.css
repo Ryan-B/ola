@@ -243,12 +243,29 @@
 	}
 	#yes_btn
     {
-    	font-size: 30pt;
+    	font-size: 50pt;
     	background-color: green;
     	border-radius: 10%;
     	margin-right: 8px;
     	font-family: "Radley", serif;
 
+    }
+    #no_btn
+    {
+    	font-size: 50pt;
+    	background-color: red;
+    	border-radius: 10%;
+    	padding-left: 10px;
+    	padding-right: 10px;
+    	font-family: "Radley", serif;
+    	
+    }
+    #yes-no
+    {
+    	width: 200px;
+    	margin: auto;
+    	/*border: 1px solid black;*/
+    	margin-bottom: 5%;
     }
 	.day_h4
 	{
