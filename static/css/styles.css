@@ -87,6 +87,18 @@
 		color: grey;
 		visibility: hidden;
 	}
+	.title9
+	{
+		
+		font-family: 'Radley', sans-serif;
+   		
+		display: inline;
+		vertical-align: top;
+		margin: 5%;
+		text-decoration: none;
+		
+		
+	}
 	.title:hover
 	{
 		color: #c2d6d6;
