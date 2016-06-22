@@ -670,6 +670,24 @@
   		vertical-align: top;
   		font-family: "Radley", serif;
   	}
+  	#input_email2
+	{
+		width: 10%;
+		height: 100%;
+		border: 1px solid grey;
+		background-color: lightgrey;
+		border-radius: 10px;
+		font-size: 3em;
+		margin-bottom: 3%;
+
+	}
+	#input_email2::-webkit-input-placeholder 
+	{ 
+  		color: white;
+  		margin-left: 3%;
+  		vertical-align: top;
+  		font-family: "Radley", serif;
+  	}
   		#input_name
 	{
 		width: 45%;
