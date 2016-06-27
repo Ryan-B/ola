@@ -10,6 +10,12 @@ var ProductSchema = new mongoose.Schema({
 	guest: { type: String, trim: true },
 	diet_guest: { type: String, trim: true },
 	fact_guest: { type: String, trim: true },
+	kid1: { type: String, trim: true },
+	kid1_age: { type: String, trim: true },
+	kid1_diet: { type: String, trim: true },
+	kid2: { type: String, trim: true },
+	kid2_age: { type: String, trim: true },
+	kid2_diet: { type: String, trim: true },
 	created_at: { type: Date, default: Date.now },
 	updated_at: { type: Date, default: Date.now }
 });

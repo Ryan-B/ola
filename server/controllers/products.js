@@ -28,6 +28,12 @@ module.exports = (function(){
 			product.guest = request.body.guest;
 			product.diet_guest = request.body.diet_guest;
 			product.fact_guest = request.body.fact_guest;
+			product.kid1 = request.body.kid1;
+			product.kid1_age = request.body.kid1_age;
+			product.kid1_diet = request.body.kid1_diet;
+			product.kid2 = request.body.kid2;
+			product.kid2_age = request.body.kid2_age;
+			product.kid2_diet = request.body.kid2_diet;
 			product.save(function(err){
 				if(err){
 					console.log(err);
