@@ -94,6 +94,11 @@ app.config(function($routeProvider){
 		controllerAs: 'productsCtrl',
 		templateUrl: '/partials/faq.partial.html'
 	})
+	.when('/thanks', {
+		controller: 'ProductsController',
+		controllerAs: 'productsCtrl',
+		templateUrl: '/partials/thanks.partial.html'
+	})
 	
 
 
