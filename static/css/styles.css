@@ -665,7 +665,7 @@
 	}
 	#input_email::-webkit-input-placeholder 
 	{ 
-  		color: white;
+  		color: darkslateblue;
   		margin-left: 3%;
   		vertical-align: top;
   		font-family: "Radley", serif;
@@ -683,7 +683,7 @@
 	}
 	#input_email2::-webkit-input-placeholder 
 	{ 
-  		color: white;
+  		color:darkslateblue;
   		margin-left: 3%;
   		vertical-align: top;
   		font-family: "Radley", serif;
@@ -700,10 +700,30 @@
 	}
 	#input_name::-webkit-input-placeholder 
 	{ 
-  		color: white;
+  		color:darkslateblue;
   		margin-left: 3%;
   		vertical-align: top;
   		font-family: "Radley", serif;
+  	}
+  	#rsvp
+  	{
+  		
+  		
+  		font-size: 1.5em;
+  		color: white;
+  		background-color: black;
+  		border-radius: 10px;
+  		margin: 3% 0 3% 0;
+  		font-family: "Radley", serif;
+
+  	}
+  	#rsvp:hover
+  	{
+  		
+  		font-size: 1.5em;
+  		color: white;
+  		background-color: grey;
+  		border-radius: 10px;
   	}
   	label
   	{
@@ -1195,7 +1215,7 @@
 	}
 	#input_email::-webkit-input-placeholder 
 	{ 
-  		color: white;
+  		color: darkslateblue;
   		margin-left: 3%;
   		vertical-align: top;
   		font-family: "Radley", serif;
@@ -1218,7 +1238,7 @@
 	}
 	#input_name::-webkit-input-placeholder 
 	{ 
-  		color: white;
+  		color: darkslateblue;
   		margin-left: 3%;
   		vertical-align: top;
   		font-family: "Radley", serif;
@@ -1241,7 +1261,7 @@
 	}
 	#input_how::-webkit-input-placeholder 
 	{ 
-  		color: white;
+  		color: darkslateblue;
   		margin-left: 3%;
   		vertical-align: top;
   	}
@@ -1259,7 +1279,7 @@
   	}
   	textarea::-webkit-input-placeholder 
 	{ 
-  		color: white;
+  		color: darkslateblue;
 
   		
   		/*vertical-align: top;*/
