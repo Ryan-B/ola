@@ -1,1 +1,37 @@
-<h3 id="our_h2">Thanks For RSVPing!</h3>
+<h3 id="our_h2">If you see your name at the bottom of the list you successfully RSVP'd!</h3>
+
+
+<div id="rsvp_info2" ng-repeat="product in productsCtrl.products">
+      <p class="rsvp_name" id="thanks" ng-bind="product.first_name">
+      <p class="rsvp_name" id="thanks" ng-bind="product.last_name"></p>
+
+</div>
+
+<a href="#/rsvp"><h3  class="no_name">I don't see my name</h3></a>
+
+
+
+<style type="text/css">
+	#thanks
+	{
+		margin-right: 5px;
+		text-align: center;
+		display: inline;
+	}
+	#rsvp_info2
+	{
+		margin: auto;
+		width: 25%;
+	}
+	.no_name
+	{
+		color: dodgerblue;
+		margin-top: 5%;
+		font-size: 2em;
+	}
+	.no_name:hover
+	{
+		color: lime;
+	}
+
+</style>
