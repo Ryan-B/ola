@@ -723,7 +723,7 @@
   	{
   		
   		
-  		font-size: 3.5em;
+  		font-size: 4em;
   		color: white;
   		background-color: black;
   		border-radius: 10px;
@@ -738,6 +738,11 @@
   		color: white;
   		background-color: grey;
   		border-radius: 10px;
+  	}
+  	#rsvp_name
+  	{
+  		font-size: 3em;
+  		font-family: "Radley", serif;
   	}
   	label
   	{
