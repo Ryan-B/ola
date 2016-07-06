@@ -719,11 +719,11 @@
   		background-color: lightgrey;
   		font-size: 2em;
   	}
-  	#rsvp
+  	#rsvp>a
   	{
   		
   		
-  		font-size: 2.5em;
+  		font-size: 3.5em;
   		color: white;
   		background-color: black;
   		border-radius: 10px;
@@ -1306,7 +1306,7 @@
   	{
   		
   		
-  		font-size: 1.5em;
+  		font-size: 8pt;
   		color: white;
   		background-color: black;
   		border-radius: 10px;
