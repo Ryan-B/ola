@@ -739,7 +739,7 @@
   		background-color: grey;
   		border-radius: 10px;
   	}
-  	#rsvp_name
+  	.rsvp_name
   	{
   		font-size: 3em;
   		font-family: "Radley", serif;
