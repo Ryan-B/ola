@@ -6,11 +6,13 @@ app.directive('directionsMap', function(){
 
       
       var mapEl = element[0];
+      var mapEl2 = element[0];
 
       console.log(mapEl);
 
       var myLatLng = {lat: 47.646282, lng: -122.340104 };
       var ola = {lat: 47.660406, lng: -122.342521};
+      // var myLatLng2 = {lat: 47.646282, lng: -122.340104 };
       // var discovery = {lat: 47.657916, lng: -122.412387};
       // var gasworks = {lat: 47.646421, lng: -122.335024};
       // var husky_stadium = {lat: 47.650461, lng: -122.302352};
@@ -22,14 +24,18 @@ app.directive('directionsMap', function(){
 
       var map = new google.maps.Map(mapEl, {
         zoom: 13,
-        center: myLatLng
+        center: myLatLng,
       });
-
       var ola_marker = new google.maps.Marker({
         position: ola,
         map: map,
         title: "Tutta Belle Pizza"
       });
+      // var map2 = new google.maps.Map(mapEl2, {
+      //   zoom: 13,
+      //   center: myLatLng2,
+      // });
+
       var discovery_marker = new google.maps.Marker({
         position: discovery,
         map: map,
@@ -70,34 +76,3 @@ app.directive('directionsMap', function(){
   };
 });
 
-// app.directive('directionsMap', function(){
-//   return {
-//     restrict: 'A',
-//     //template: '<div></div>',
-//     link: function (scope, element, attrs) {
-
-//       //var mapEl = element.children()[0];
-//       var mapEl = element[0];
-
-//       console.log(mapEl);
-
-//       var myLatLng = {lat: 40.884587,  lng: -111.884628 };
-//       var mueller_park = {lat: 40.868748,   lng: -111.846699 };
-      
-//       // var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
-
-//       // var baseballIcon = "/static/img/baseball.jpg"
-
-//       var map = new google.maps.Map(mapEl, {
-//         zoom: 13,
-//         center: myLatLng
-//       });
-
-//       var mueller_park_marker = new google.maps.Marker({
-//         position: mueller_park,
-//         map: map,
-//         title: "Mueller Park"
-//       });
-//     }
-//   };
-// });
