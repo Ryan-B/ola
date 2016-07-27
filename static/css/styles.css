@@ -766,9 +766,9 @@
     }
 }
 	
-@media screen and (min-width: 481px){
+@media screen and (min-width: 600px){
 
-	body
+	/*body
 	{
 		margin: 5%;
 		background-color: black;
@@ -785,7 +785,7 @@
 		text-shadow: 0px 2px 1px rgba(255,255,255,0.7), 0px -2px 1px rgba(0,0,0,0.5), 0px -1px 1px rgba(0,0,0,0.5);
  
 	   	color: rgba(169,169,169,0.6);
-	   	/*color: #333333;*/
+	   
 		
 
 	}
@@ -797,7 +797,7 @@
 		font-size: 2em;
 		color: grey;
 		margin-bottom: 5%
-	}
+	}*/
 	.title
 	{
 		font-size: .8em;
@@ -920,7 +920,7 @@
 	}
 }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 700px){
 	body
 	{
 		margin: 7.5% 15% 7.5% 15%;
@@ -961,7 +961,7 @@
    		font-weight: 100;
 		display: inline;
 		vertical-align: top;
-		margin: 0 2% 0 2%;
+		margin: 0 1% 0 1%;
 		text-decoration: none;
 		color: grey;
 		visibility: visible;

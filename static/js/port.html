@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ryan Bird's Portfolio</title>
+  	
+       
+	<script type="text/javascript" src="/js/lib/angular.js"></script>
+	<script type="text/javascript" src="/js/lib/angular-routes.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="/js/lib/jquery.timer.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Mrs+Sheppards' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Syncopate:700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Fontdiner+Swanky' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Princess+Sofia' rel='stylesheet' type='text/css'>
+	
+	<script type="text/javascript">
+var app = angular.module('app', ['ngRoute']);
+app.config(function($routeProvider){
+	$routeProvider
+	
+	.when('/ryan', {
+		templateUrl: '/partials/ryan.partial.html'
+	})
+	.when('/code', {
+		templateUrl: '/partials/code.partial.html'
+	})
+	
+});	
+	</script>
+	
+</head>
+<header>
+	<div ng-view id="stats"></div>
+	<a id="uw_tex"  href="#/ryan"><h2>Who is Ryan Bird?</h2></a><br>
+</header>
+<body>
+	
+		
+	
+	Ryan Bird <div id="magic"></div>
+		<br>
+		<a href="" id="first"><button class="btn">>   =</button></a>
+	
+	
+	<script>
+		var words = ["is a full stack developer... &","founded Vogel1Devs... &", "rips it with Javascript... &","plays mahjong with Python...  &","sailed the RESTful Seas with PHP... &","stitched up the seam with MEAN... &", "specializes in unit-testing... &"],
+			el = document.getElementById('magic'),
+			word_counter = 0,
+			character_counter = 0;
+		function updateText()
+		{
+			el.innerHTML = el.innerHTML+words[word_counter][character_counter++];
+			if(character_counter == words[word_counter].length)
+			{
+				
+				word_counter++; 	//choose a different word
+				character_counter = 0;	//start over with the first character of the word
+				el.innerHTML = '';  //set the html to be blank
+				//if we're displaying the last word, go back to the first word
+				if(word_counter == words.length)
+					word_counter = 0;
+			}
+		}
+ 		var timer = $.timer(function() {
+  			updateText();
+		}, 110, true);
+		var want_to_hit_pause = true;
+ 		timer.play();
+		$("#first").click(function() {
+			if(want_to_hit_pause){
+				timer.pause();
+				want_to_hit_pause = false;
+			}	
+			else{
+				timer.play();
+				want_to_hit_pause = true;
+			}
+		})	
+	</script>
+	
+	
+	
+		
+
+
+	<h4 id="proj">Live Links</h4>				
+	<ul id="links">
+		<li>
+			<a href="https://www.linkedin.com/in/ryan-bird-847487109"><img id="in_logo" src="in.png"></a>
+		</li>
+		<li><a href="http://discontinu.herokuapp.com"><h6 id="dis_u">discontinÜ</h6></a></li>
+	<li></li>
+	<li><a href="http://dawg-chat.herokuapp.com"><h6 id="chat">Socket.io Live Chat</h6></a></li>
+		<li>
+			<a href="https://github.com/Ryan-B"><img class="logo" src="github.png"></a>
+		</li>
+	</ul>
+
+
+			<a href="/" id="reset">reset the page</a>
+
+	
+
+</body>
+</html>
+
+<style>
+	*{
+		border:1px dotted black;
+	}
+	body {
+		background-image: url('mt.jpg');
+    	background-repeat: no-repeat;
+   
+    	background-size: cover;
+		font-family: 'Nunito', sans-serif;
+		color:white;
+		font-size:50px;
+		text-align: center;
+		
+	}
+	#magic{
+		color: lime;
+		border-right: 1px solid #777;
+		padding-right: 7px;
+		display: inline;
+	}
+	.logo{
+		width: 50%;
+		height: 50%;
+	}
+	.logo:hover{
+		width: 80%;
+		height: 80%;
+	}
+	#in_logo{
+		width: 50%;
+		height: 50%;
+	}
+	#in_logo:hover{
+		width: 80%;
+		height: 80%;
+	}
+	 ul li{
+		display: inline;
+		margin: 0 auto;
+	}
+	a{
+		display: inline-block;
+		margin: 0 auto;
+	}
+	h2{
+		font-family: 'Audiowide', cursive;
+		display: inline-block;
+		color: white; 
+	}
+	h2:hover{
+		font-family: 'Fontdiner Swanky', cursive;
+		color: dodgerblue;
+		font-size: 56.25pt;
+		display: inline-block; 
+	}
+	#first{
+		font-size: 14pt;
+		color: lightgrey;
+	}
+	#reset{
+		font-size: 14pt;
+		color: lightgrey;
+		display: inline-block;
+	}
+	#reset:hover{
+		font-size: 14pt;
+		color: dodgerblue;
+		display: inline-block;
+	}
+	.btn{
+		-webkit-border-radius: 10;
+		-moz-border-radius: 10;
+		border-radius: 10px;
+		font-family: Arial;
+		color: #ffffff;
+		font-size: 8px;
+		background: limegreen;
+		padding: 5px 10px 5px 10px;
+		text-decoration: none;
+	}
+	.btn:hover{
+	  	background: #d11938;
+	  	text-decoration: none;
+	}
+	#chat{
+		color: white;
+		margin-top: 1px;
+	}
+	#chat:hover{
+		color: dodgerblue;
+		
+	}
+	#dis_u{
+		margin-top: 1px;
+		color: white;
+		font-family: 'Princess Sofia', cursive; 
+	}
+	#dis_u:hover{
+		color: dodgerblue;
+		font-family: 'Princess Sofia', cursive; 
+	}
+	#proj{
+		color: lightgrey;
+		font-family: courier;
+		font-size: 12pt;
+		margin-top: 4%;
+	}
+	#links{
+		margin-top: 0 auto;
+	}
+</style>
+Contact GitHub API Training Shop Blog About
+© 2016 GitHub, Inc. Terms Privacy Security Status Help

@@ -113,3 +113,4 @@ app.controller('DeclinesController', function(DeclinesFactory){
 		})
 	}
 })
+
