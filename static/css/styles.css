@@ -773,7 +773,7 @@
 	}
 }
 	
-@media screen and (min-width: 430px){
+@media screen and (min-width: 730px){
 
 	/*body
 	{
@@ -927,7 +927,7 @@
 	}
 }
 
-@media screen and (min-width: 700px){
+@media screen and (min-width: 1024px){
 	body
 	{
 		margin: 7.5% 15% 7.5% 15%;
