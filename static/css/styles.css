@@ -1,22 +1,11 @@
 @media screen and (min-width: 0px){
-    
-
-
-
-
 *
 	{
-		/*border: 1px dotted black;*/
 		margin: 0;
-
-
 	}
 	body
 	{
-		/*margin: 3%;*/
 		background-color: black;
-		
-
 	}
 
 	#main_section
@@ -771,15 +760,15 @@
 		font-family: "Radley", serif;
 		font-size: 2em;
 	}
+	#mobile2
+	{
+		visibility: hidden;
+	}
 }
 	
-@media screen and (min-width: 730px){
+@media screen and (min-width: 481px){
 
-	/*body
-	{
-		margin: 5%;
-		background-color: black;
-	}
+	
 	#ola_font
 	{
 		font-family: 'Radley', serif;
@@ -804,7 +793,7 @@
 		font-size: 2em;
 		color: grey;
 		margin-bottom: 5%
-	}*/
+	}
 	.title
 	{
 		font-size: .8em;
@@ -1447,6 +1436,13 @@
 	#mobile
 	{
 		visibility: hidden;
+		height: 0;
+	}
+	#mobile2
+	{
+		visibility: visible;
+		font-family: "Radley", serif;
+		font-size: 2em;
 	}
 	
 
