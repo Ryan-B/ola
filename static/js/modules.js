@@ -33,6 +33,21 @@ app.config(function($routeProvider){
 		controllerAs: 'productsCtrl',
 		templateUrl: '/partials/maps3.partial.html'
 	})
+	.when('/maps4', {
+		controller: 'ProductsController',
+		controllerAs: 'productsCtrl',
+		templateUrl: '/partials/maps4.partial.html'
+	})
+	.when('/maps5', {
+		controller: 'ProductsController',
+		controllerAs: 'productsCtrl',
+		templateUrl: '/partials/maps5.partial.html'
+	})
+	.when('/maps6', {
+		controller: 'ProductsController',
+		controllerAs: 'productsCtrl',
+		templateUrl: '/partials/maps6.partial.html'
+	})
 	
 	.when('/rsvp', {
 		controller: 'ProductsController',
