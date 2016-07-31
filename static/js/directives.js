@@ -65,7 +65,7 @@ app.directive('directionsMap', function(){
         title: "Wedding Location",
         animation: google.maps.Animation.DROP,
         label: 1,
-        icon: 'http://maps.google.com/mapfiles/ms/icons/pink-dot.png'
+        icon: 'http://maps.google.com/mapfiles/ms/icons/yellow-dot.png'
        
       });
        var queencity_marker = new google.maps.Marker({
@@ -74,7 +74,7 @@ app.directive('directionsMap', function(){
         title: "Reception Location",
         animation: google.maps.Animation.DROP,
         label: 1,
-        icon: 'http://maps.google.com/mapfiles/ms/icons/pink-dot.png'
+        icon: 'http://maps.google.com/mapfiles/ms/icons/yellow-dot.png'
        
       });
      
