@@ -165,7 +165,7 @@
 	{
 		font-family: 'Radley', serif;
 		text-align: center;
-		font-size: 9em;
+		font-size: 6em;
 		margin-bottom: 1.5%;
 		margin-top: 5%;
 		display: inline-block;
@@ -237,15 +237,10 @@
 	}
 	#our_h2
 	{
-		font-size: 4em;
+		font-size: 2em;
 		color: black;
 	}
-	#our_p
-	{
-		font-size: 3em;
-		color: grey;
-		margin: 0 5% 0 5%;
-	}
+	
 	#our_p2
 	{
 		font-size: 2em;
@@ -292,7 +287,7 @@
 		text-align: center;
 		font-family: "Radley", serif;
 		margin: 0 0 0 0;
-		font-size: 3em;
+		font-size: 2em;
 	}
 	p
 	{
@@ -305,6 +300,7 @@
 		text-align: justify;
 		font-family: "Radley", serif;
 		padding-bottom: 3%;
+		font-size: 1.5em;
 	}
 	#our_story
 	{	
@@ -331,48 +327,48 @@
 		color: grey;
 		text-align: center;
 		font-family: "Radley", serif;
-		font-size: 3em;
+		font-size: 2em;
 		
 	}
 	.event_p
 	{
-		font-size: 3em;
+		font-size: 2em;
 		margin: 0;
 		padding: 0;
 	}
 	.event
 	{
-		font-size: 3em;
+		font-size: 2em;
 		margin: 0;
 		padding: 0;
 	}
 	.locale
 	{
-		font-size: 2.5em;
+		font-size: 1.5em;
 	}
 	#address
 	{
-		font-size: 2.5em;
+		font-size: 1.5em;
 	}
 	.day_h2
 	{
 		text-align: center;
 		font-family: "Radley", serif;
 		margin: 0 0 2% 0;
-		font-size: 3em;
+		font-size: 2em;
 	}
 	.day_h3
 	{
 		text-align: center;
 		font-family: "Radley", serif;
 		margin: 0 0 2% 0;
-		font-size: 3em;
+		font-size: 2em;
 	}	
 	#come
 	{
 		text-align: center;
 		font-family: 'Radley', serif;
-		font-size: 2em;
+		font-size: 1em;
 		margin-bottom: 3%;
 		margin-top: 3%;
 		font-weight: 100;
@@ -381,7 +377,7 @@
 	{
 		text-align: center;
 		margin: 5% 0 5% 0;
-		font-size: 1.5em;
+		font-size: 1em;
 	}
 	.names
 	{
@@ -390,7 +386,7 @@
 		/*width: 50%;*/
 		text-align: center;
 		margin: auto;
-		font-size: 3em;
+		font-size: 2em;
 		padding-top: 3%;
 
 
@@ -402,7 +398,7 @@
 		/*width: 50%;*/
 		text-align: center;
 		margin: auto;
-		font-size: 3em;
+		font-size: 2em;
 		padding-bottom: 3%;
 
 
@@ -411,11 +407,11 @@
 	{
 		margin-bottom: 10%;
 		margin-top: 10%;
-		font-size: 2em;
+		font-size: 1em;
 	}
 	#vogel
 	{
-		font-size: 2em;
+		font-size: 1em;
 		text-align: center;
 		border-top: 2px solid grey;
 		display: block;
@@ -533,7 +529,7 @@
 		text-align: center;
 		font-family: "Radley", serif;
 		margin-bottom: 2%;
-		font-size: 2.5em;
+		font-size: 1.5em;
 	}
 	#final_p
 	{
@@ -544,7 +540,7 @@
 		display: inline;
 		font-family: "Radley", serif;
 		margin: 1.5%;
-		font-size: 3em;
+		font-size: 2em;
 	}
 	#hotel_ul
 	{
@@ -625,7 +621,7 @@
 	}
 	.explore_h3
 	{
-		font-size: 4em; 
+		font-size: 2em; 
 
 	}
 	#explore_li 
@@ -635,7 +631,7 @@
 		color: grey;
 		font-family: "Radley", serif;
 		
-		font-size: 3em;
+		font-size: 1.5em;
 		
 	}
 	#explore_li:hover
