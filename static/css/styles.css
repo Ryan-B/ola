@@ -1354,11 +1354,15 @@
       padding: 0;
     }
     #map {
-      height: 90%;
+      height: 98%;
       width: 80%;
       margin: auto;
-      margin-bottom: 10%;
+      margin-bottom: 0px;
       border: 1px solid black;
+    }
+    .bottom_marker
+    {
+    	margin-bottom: 5%;
     }
     #img_div3
     {
