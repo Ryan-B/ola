@@ -74,7 +74,7 @@ app.directive('directionsMap', function(){
         title: "Reception Location",
         animation: google.maps.Animation.DROP,
         label: 1,
-        icon: 'http://maps.google.com/mapfiles/ms/icons/yellow-dot.png'
+        icon: 'http://maps.google.com/mapfiles/ms/icons/purple-dot.png'
        
       });
      
