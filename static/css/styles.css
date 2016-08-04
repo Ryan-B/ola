@@ -809,6 +809,29 @@
 	{
 		visibility: hidden;
 	}
+	#thanks
+	{
+		margin-left: 3%;
+		text-align: left;
+		display: inline;
+	}
+	#rsvp_info2
+	{
+		margin: 0 0 0 18%;
+		width: 100%;
+		/*border: 1px dotted red;*/
+	}
+	.no_name
+	{
+		color: dodgerblue;
+		margin-top: 5%;
+		font-size: 2em;
+	}
+	.no_name:hover
+	{
+		color: lime;
+	}
+
 }
 	
 @media screen and (min-width: 481px){
@@ -1501,6 +1524,29 @@
 		font-family: "Radley", serif;
 		font-size: 2em;
 	}
+	#thanks
+	{
+		margin-right: 5px;
+		text-align: center;
+		display: inline;
+		margin-left: 0;
+	}
+	#rsvp_info2
+	{
+		margin: auto;
+		width: 25%;
+	}
+	.no_name
+	{
+		color: dodgerblue;
+		margin-top: 5%;
+		font-size: 2em;
+	}
+	.no_name:hover
+	{
+		color: lime;
+	}
+
 	
 
 }
