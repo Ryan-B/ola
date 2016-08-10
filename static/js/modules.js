@@ -124,6 +124,11 @@ app.config(function($routeProvider){
 		controllerAs: 'productsCtrl',
 		templateUrl: '/partials/thanks.partial.html'
 	})
+	.when('/picnic', {
+		controller: 'ProductsController',
+		controllerAs: 'productsCtrl',
+		templateUrl: '/partials/picnic.partial.html'
+	})
 	
 
 

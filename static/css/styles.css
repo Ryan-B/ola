@@ -831,6 +831,12 @@
 	{
 		color: lime;
 	}
+	#picnic_div
+	{
+		width: 90%;
+		margin: auto;
+		margin-bottom: 200px;
+	}
 
 }
 	
