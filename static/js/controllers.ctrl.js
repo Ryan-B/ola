@@ -30,7 +30,7 @@ app.controller('HomeController', function($interval, $scope) {
 				k = 0;
 			}
 			this.image = dimages[k];
-		}.bind(this), 6000);
+		}.bind(this), 8000);
 
 	$scope.$on('$destroy', function() {
 		$interval.cancel(intervalId);
