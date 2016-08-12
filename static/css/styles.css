@@ -837,6 +837,12 @@
 		margin: auto;
 		margin-bottom: 200px;
 	}
+	#new_div
+	{
+		width: 90%;
+		margin: auto;
+
+	}
 
 }
 	
@@ -1038,7 +1044,7 @@
 	}
 	#new_div
 	{
-		width: 80%;
+		width: 66%;
 		margin: auto;
 
 	}
