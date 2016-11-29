@@ -843,6 +843,14 @@
 		margin: auto;
 
 	}
+	.boat_ride_div
+{
+	width: 90%;
+	display: inline-block;
+	margin-left: 5%;
+	margin-bottom: 20px;
+
+}	
 
 }
 	
@@ -1558,6 +1566,14 @@
 	{
 		color: lime;
 	}
+	.boat_ride_div
+{
+	width: 66.6%;
+	display: inline-block;
+	margin-left: 16.667%;
+	margin-bottom: 40px;
+
+}	
 
 	
 
