@@ -129,6 +129,17 @@ app.config(function($routeProvider){
 		controllerAs: 'productsCtrl',
 		templateUrl: '/partials/picnic.partial.html'
 	})
+	.when('/vogel1devs', {
+		controller: 'ProductsController',
+		controllerAs: 'productsCtrl',
+		templateUrl: '/partials/vogel1devs.partial.html'
+	})
+	.when('/boat_pics', {
+		controller: 'ProductsController',
+		controllerAs: 'productsCtrl',
+		templateUrl: '/partials/boat_pics.partial.html'
+	})
+
 	
 
 
