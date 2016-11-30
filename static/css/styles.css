@@ -114,7 +114,7 @@
 	}
 	#menu_ul
 	{
-		margin-bottom: 10%;
+		margin-bottom: 5%;
 	}
 	a
 	{
@@ -845,12 +845,18 @@
 	}
 	.boat_ride_div
 {
-	width: 90%;
+	width: 100%;
 	display: inline-block;
-	margin-left: 4%;
-	margin-bottom: 20px;
+	margin-left: 0;
+	margin-bottom: 40px;
 
 }	
+	.new_pics
+	{
+		border: none;
+		border-top: 2px solid black;
+		border-bottom: 2px solid black;
+	}
 
 }
 	
@@ -1568,16 +1574,23 @@
 	}
 	.boat_ride_div
 {
-	width: 78%;
+	width: 99.6%;
 	display: inline-block;
-	margin-left: 10%;
-	margin-bottom: 40px;
+	/*margin-left: 10%;*/
+	margin-bottom: 150px;
 
 }	
 .full_size
 {
 	width: 100%;
 }
-	
+	.new_pics
+	{
+		border: 2px solid black;
+	}
+	#last_pic_div
+	{
+		margin-bottom: 0;
+	}
 
 }
