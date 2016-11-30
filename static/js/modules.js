@@ -179,7 +179,11 @@ app.config(function($routeProvider){
 		controllerAs: 'productsCtrl',
 		templateUrl: '/partials/reception.partial.html'
 	})
-	
+	.when('/party', {
+		controller: 'ProductsController',
+		controllerAs: 'productsCtrl',
+		templateUrl: '/partials/party.partial.html'
+	})
 
 
 });
