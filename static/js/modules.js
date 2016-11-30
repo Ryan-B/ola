@@ -144,12 +144,36 @@ app.config(function($routeProvider){
 		controllerAs: 'productsCtrl',
 		templateUrl: '/partials/newpics.partial.html'
 	})
-	.when('/bachlorette', {
+	.when('/bachelorette', {
 		controller: 'ProductsController',
 		controllerAs: 'productsCtrl',
-		templateUrl: '/partials/bachlorette.partial.html'
+		templateUrl: '/partials/bachelorette.partial.html'
 	})
-	
+	.when('/family', {
+		controller: 'ProductsController',
+		controllerAs: 'productsCtrl',
+		templateUrl: '/partials/family.partial.html'
+	})
+	.when('/first_look', {
+		controller: 'ProductsController',
+		controllerAs: 'productsCtrl',
+		templateUrl: '/partials/first_look.partial.html'
+	})
+	.when('/bachelor', {
+		controller: 'ProductsController',
+		controllerAs: 'productsCtrl',
+		templateUrl: '/partials/bachelor.partial.html'
+	})
+	.when('/hugs', {
+		controller: 'ProductsController',
+		controllerAs: 'productsCtrl',
+		templateUrl: '/partials/hugs.partial.html'
+	})
+	.when('/ceremony', {
+		controller: 'ProductsController',
+		controllerAs: 'productsCtrl',
+		templateUrl: '/partials/ceremony.partial.html'
+	})
 	
 
 
