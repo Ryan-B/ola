@@ -139,6 +139,11 @@ app.config(function($routeProvider){
 		controllerAs: 'productsCtrl',
 		templateUrl: '/partials/boat_pics.partial.html'
 	})
+	.when('/img1', {
+		controller: 'ProductsController',
+		controllerAs: 'productsCtrl',
+		templateUrl: '/img1.html'
+	})
 
 	
 

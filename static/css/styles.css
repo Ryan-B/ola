@@ -1574,7 +1574,10 @@
 	margin-bottom: 40px;
 
 }	
-
+.full_size
+{
+	width: 100%;
+}
 	
 
 }
