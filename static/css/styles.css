@@ -850,7 +850,15 @@
 	margin-left: 0;
 	margin-bottom: 40px;
 
-}	
+}
+.boat_ride_div2
+{
+	width: 100%;
+	display: inline-block;
+	margin-left: 0;
+	margin-bottom: 40px;
+
+}		
 	.new_pics
 	{
 		border: none;
@@ -1574,12 +1582,20 @@
 	}
 	.boat_ride_div
 {
-	width: 99.6%;
+	width: 44%;
 	display: inline-block;
-	/*margin-left: 10%;*/
+	margin-left: 28%;
 	margin-bottom: 150px;
 
-}	
+}
+.boat_ride_div2
+{
+	width: 80%;
+	display: inline-block;
+	margin-left: 10%;
+	margin-bottom: 150px;
+
+}		
 .full_size
 {
 	width: 100%;
@@ -1590,7 +1606,11 @@
 	}
 	#last_pic_div
 	{
-		margin-bottom: 0;
+		margin-bottom: 10%;
+	}
+	#pics_h2
+	{
+		margin-top: 20px;
 	}
 
 }
