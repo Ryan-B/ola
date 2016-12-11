@@ -1638,5 +1638,11 @@
 		margin-top: 2%;
 		/*display: inline-block;*/
 	}
+	.new_pics_div
+	{
+		width: 30%;
+		margin: 1%;
+		display: inline-block;
+	}
 
 }
